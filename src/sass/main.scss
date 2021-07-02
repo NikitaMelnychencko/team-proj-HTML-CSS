@@ -1,7 +1,31 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// utils
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/hide';
+@import './utils/animation';
+// base
+@import './base/globalClass';
+@import './base/reset';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+//components
+@import './components/backdrop';
+@import './components/buttun';
+@import './components/logo';
+@import './components/counter';
+
+//layout
+//heder
+@import './layout/header';
+@import './layout/mobile_menu';
+//main-index.html
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/problems';
+@import './layout/how-we-do';
+@import './layout/program';
+@import './layout/benefits';
+@import './layout/about';
+@import './layout/guarantee';
+//footer
+@import './layout/contacts';
+@import './layout/footer';
