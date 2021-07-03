@@ -20,10 +20,14 @@ body {
 
   @media screen and (min-width: $tablet-general) {
     width: $tablet-general;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media screen and (min-width: $desktop-up) {
     width: $desktop-up;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 

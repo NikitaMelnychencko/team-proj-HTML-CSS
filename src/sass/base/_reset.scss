@@ -18,3 +18,12 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
