@@ -35,23 +35,19 @@
 
   &::before {
     display: block;
-    content: '';
+    content: url(../images/img/mobile/page-guarantee/guarant-icon.svg);
     width: 14.67px;
     height: 20px;
 
     position: absolute;
     top: 0;
     left: -20.33px;
-
-    background-image: url(../images/img/mobile/page-guarantee/guarant-icon.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &:not(:last-child)::after {
     display: block;
     content: '';
-    height: 60px;
+    height: 50px;
 
     position: absolute;
     left: -14px;
@@ -62,11 +58,11 @@
   }
 
   &:first-child::after {
-    bottom: -23px;
+    bottom: -20px;
   }
 
   & + &::after {
-    bottom: -41px;
+    bottom: -35px;
   }
 }
 
@@ -137,6 +133,8 @@
     &::before {
       width: 22.49px;
       height: 29.6px;
+
+      content: url(../images/img/desktop/page-guarantee/guarant-icon-desk.svg);
 
       left: -30.66px;
     }
