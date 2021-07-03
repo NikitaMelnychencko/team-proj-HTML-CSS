@@ -12,10 +12,33 @@
   text-transform: uppercase;
 }
 
-.buttun--primary {
+.buttun-primary {
   @extend %buttun;
-  display: none;
   border: 2px solid #ff6b09;
+  padding: 17px 36px;
+  background-color: transparent;
+  color: $selection-title-text-color;
+  &--tablet-up {
+    display: none;
+    @media screen and (min-width: $tablet-general) {
+      display: block;
+      margin-right: 60px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.14em;
+      padding: 15px 5px;
+    }
+  }
+
+  &--mobile {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    @media screen and (min-width: $tablet-general) {
+      display: none;
+    }
+  }
 }
 
 .menu-button {
@@ -41,6 +64,9 @@
     height: 15px;
     width: 15px;
     color: #ffffff;
+  }
+  @media screen and (min-width: $tablet-general) {
+    top: 60px;
   }
 }
 

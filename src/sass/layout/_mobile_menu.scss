@@ -17,20 +17,26 @@
     display: block;
     overflow-y: auto;
     padding: 110px 0 0 0;
+    margin-left: auto;
   }
 }
 
 .main-nav-mobile {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.site-nav-mobile__item {
+.site-nav-mobile__link {
   font-weight: 800;
   font-size: 20px;
-  line-height: 180%;
+  line-height: 1.8;
 
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: $secondary-title-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
