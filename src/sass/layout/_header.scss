@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: none;
+}

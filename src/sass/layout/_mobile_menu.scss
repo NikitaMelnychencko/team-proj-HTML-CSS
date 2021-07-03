@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+}
+
+/*=======menucontainer mobile=======*/
+.menu-container-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: $menu-background-color;
+
+  &--is-open {
+    display: block;
+    overflow-y: auto;
+    padding: 110px 0 0 0;
+  }
+}
+
+.main-nav-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav-mobile__item {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 180%;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
