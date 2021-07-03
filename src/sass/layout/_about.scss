@@ -1,0 +1,187 @@
+.about__title {
+  margin-bottom: 20px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: $primary-title-text-color;
+}
+
+.about__img {
+  width: 243px;
+
+  margin-bottom: 20.42px;
+}
+
+.about__name {
+  margin-bottom: 10px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $primary-title-text-color;
+}
+
+.about__list {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    border-bottom-style: solid;
+    border-top-color: $primary-text-color;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-image: url(../images/img/mobile/page-about/about-line.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.about__item {
+  display: flex;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: $primary-title-text-color;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+.about__icon {
+  width: 17.08px;
+  height: 14px;
+
+  margin-right: 7.92px;
+}
+
+.about__text {
+  margin-bottom: 29px;
+
+  line-height: 2.2;
+}
+
+.about__link {
+  text-decoration-line: underline;
+  color: $selection-text-color;
+}
+
+.about__text-span {
+  display: block;
+
+  & + & {
+    display: inline;
+  }
+}
+
+@media (min-width: $mobile-general) {
+}
+
+@media (min-width: $tablet-general) {
+  .about__title {
+    margin-bottom: 30px;
+
+    font-size: 26px;
+  }
+
+  .about__position {
+    display: flex;
+  }
+
+  .about__img {
+    height: 305.58px;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .about__item {
+    font-size: 12px;
+  }
+
+  .about__text {
+    font-size: 10px;
+    line-height: 2.8;
+  }
+
+  .about__icon {
+    margin-right: 8.92px;
+  }
+}
+
+@media (min-width: $desktop-up) {
+  .about__title {
+    font-size: 46px;
+
+    margin-bottom: 50px;
+  }
+
+  .about__img {
+    width: 579px;
+    height: auto;
+    margin-right: 32.79px;
+  }
+
+  .about__name {
+    font-size: 30px;
+
+    line-height: 1.219;
+  }
+
+  .about__list {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .about__icon {
+    width: 26.67px;
+
+    margin-right: 37.81px;
+  }
+
+  .about__item {
+    font-size: 16px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .about__link {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .about__text-span {
+    display: block;
+
+    & + & {
+      display: block;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
