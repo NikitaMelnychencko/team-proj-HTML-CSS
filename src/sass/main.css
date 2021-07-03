@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #b9b9b9;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.08em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 1366px;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  background: #FFFFFF;
+  -webkit-box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+          box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.30;
+  letter-spacing: 0.03em;
+  color: #111518;
+}
+
+.hero__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b9b9b9;
+}
+
+.hero__subtitle {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #111518;
+}
+
+.hero__subtitle.color {
+  color: #ff6b09;
+}
+
+.button {
+  width: 260px;
+  padding: 17px 46px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff6b09;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__img {
+  position: relative;
+}
+
+.hero__img--nottransparent {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=main.css.map */

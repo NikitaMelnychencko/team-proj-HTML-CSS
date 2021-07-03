@@ -1,0 +1,66 @@
+.hero{
+   background: #FFFFFF;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
+
+
+.hero__title{
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.30;
+    letter-spacing: 0.03em;
+    color: $primary-title-text-color;
+
+}
+
+.hero__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.57;
+    align-items: center;
+    color: $primary-text-color;
+
+   
+}
+
+.hero__subtitle{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.57;
+    align-items: center;
+    color: $primary-title-text-color;
+     &.color{
+    color: $selection-text-color;
+    }
+}
+
+.button{
+    width: 260px;
+    padding: 17px 46px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $third-text-color;
+    background-color: $selection-title-text-color;
+    border:none;
+    cursor: pointer;
+}
+
+
+.hero__img{
+    position: relative;
+}
+
+.hero__img--nottransparent{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 0;
+
+}
