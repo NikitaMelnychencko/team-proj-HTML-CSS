@@ -1,8 +1,16 @@
 .hero{
+    
    background: #FFFFFF;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-}
 
+    &__section{
+    @media screen and (min-width:$tablet-general){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+}
 
 .hero__title{
     margin-bottom: 30px;
@@ -11,6 +19,12 @@
     line-height: 1.30;
     letter-spacing: 0.03em;
     color: $primary-title-text-color;
+
+    @media screen and (min-width:$tablet-general){
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 1.30;
+    }
 
 }
 
@@ -55,12 +69,19 @@
 
 .hero__img{
     position: relative;
+
+    @media screen and (min-width:$mobile-general){
+        margin-left: 72px;
+        
+    }
 }
 
 .hero__img--nottransparent{
     display: block;
     position:absolute;
-    top:0;
-    left: 0;
-
+    top:-10px;
+    left: 21px;
 }
+
+
+
