@@ -67,13 +67,19 @@
   &:not(:last-child) {
     margin-bottom: 26px;
   }
-}
 
-.about__icon {
-  width: 17.08px;
-  height: 14px;
+  &::before {
+    display: block;
+    content: '';
+    width: 17.08px;
+    height: 14px;
 
-  margin-right: 7.92px;
+    margin-right: 7.92px;
+
+    background-image: url(../images/img/mobile/page-about/about-icon.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .about__text {
@@ -117,15 +123,18 @@
 
   .about__item {
     font-size: 12px;
+
+    &::before {
+      width: 17.08px;
+      height: 14px;
+
+      margin-right: 8.92px;
+    }
   }
 
   .about__text {
     font-size: 10px;
     line-height: 2.8;
-  }
-
-  .about__icon {
-    margin-right: 8.92px;
   }
 }
 
@@ -161,6 +170,13 @@
 
   .about__item {
     font-size: 16px;
+
+    &::before {
+      width: 26.67px;
+      height: 20px;
+
+      margin-right: 37.81px;
+    }
   }
 
   .about__text {
