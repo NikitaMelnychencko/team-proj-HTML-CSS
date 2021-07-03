@@ -70,15 +70,11 @@
 
   &::before {
     display: block;
-    content: '';
+    content: url(../images/img/mobile/page-about/about-icon.svg);
     width: 17.08px;
     height: 14px;
 
     margin-right: 7.92px;
-
-    background-image: url(../images/img/mobile/page-about/about-icon.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -174,6 +170,8 @@
     &::before {
       width: 26.67px;
       height: 20px;
+
+      content: url(../images/img/desktop/page-about/about-icon-desk.svg);
 
       margin-right: 37.81px;
     }
