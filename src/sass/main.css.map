@@ -1,0 +1,31 @@
+{
+    "version": 3,
+    "mappings": ";AKAA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,gBAAgB,EHeS,OAAO;EGdhC,KAAK,EHAc,OAAO;EGC1B,WAAW,EAAE,sBAAsB;EACnC,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,MAAM;CACvB;;AAED,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CAiBpB;;AAfC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EANrC,AAAA,UAAU,CAAC;IAOP,KAAK,EJhBQ,KAAK;GI8BrB;;;AAXC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAVrC,AAAA,UAAU,CAAC;IAWP,KAAK,EJlBQ,KAAK;IImBlB,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI;GAQtB;;;AALC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAhBtC,AAAA,UAAU,CAAC;IAiBP,KAAK,EJtBI,MAAM;IIuBf,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI;GAEtB;;;AAED,AAAA,OAAO,CAAC;EACN,aAAa,EAAE,IAAI;CACpB;;ACnCD,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACD,SAAS,EAAE,IAAI;CAMhB;;AATD,AAKE,EALA;AACF,EAAE;AACF,EAAE,CAGE;EACA,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;CACjB;;AAEH,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;CACjB;;AACD,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,YAAY;CACtB;;AACD,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,IAAI;CACb;;AI5BD,AAAA,cAAc,CAAC;EACb,aAAa,EAAE,cAAc;CAC9B;;AAED,AACE,cADY,AACX,QAAQ,CAAC;EACR,iBAAiB,EAAE,cAAc;EACjC,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,MAAM,CAAC,uBAAuB;EAEvC,aAAa,EAAE,GAAG;EAElB,KAAK,EREM,OAAO;CQDnB;;AIbH,AAAA,sBAAsB,CAAA;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EAGnB,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,KAAK;CAGf;;AAED,AAAA,iBAAiB,CAAA;EAEb,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,MAAM;EACnB,KAAK,EZTkB,OAAO;CYUjC;;AAED,AAAA,2BAA2B,CAAA;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACnB;;AAGD,AAAA,iBAAiB,CAAA;EACb,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "main.scss",
+        "utils/_breakpoints.scss",
+        "utils/_variables.scss",
+        "utils/_hide.scss",
+        "utils/_animation.scss",
+        "base/_globalClass.scss",
+        "base/_reset.scss",
+        "components/_backdrop.scss",
+        "components/_button.scss",
+        "components/_logo.scss",
+        "components/_counter.scss",
+        "layout/_header.scss",
+        "layout/_mobile_menu.scss",
+        "layout/_hero.scss",
+        "layout/_advantages.scss",
+        "layout/_problems.scss",
+        "layout/_how-we-do.scss",
+        "layout/_program.scss",
+        "layout/_benefits.scss",
+        "layout/_about.scss",
+        "layout/_guarantee.scss",
+        "layout/_contacts.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
