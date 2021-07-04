@@ -1,0 +1,81 @@
+.contacts {
+    background-color: $secondary-text-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $secondary-title-text-color;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        text-align: center;
+        letter-spacing: 0.08em;
+        color: $third-text-color;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input {
+        width: 280px;
+        height: 48px;
+        margin-bottom: 20px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.08em;
+        &::placeholder {
+            padding-left: 28px;
+        }
+    }
+    &__button {
+        width: 260px;
+        height: 48px;
+        background: $accent-color;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.25;
+        text-align: center;
+        color: $third-text-color;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }      
+}
+.accent-words {
+    color: $selection-title-text-color;
+}
+
+
+
+
+@media screen and (min-width: $mobile-general) {
+    
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    
+  }
+ 
