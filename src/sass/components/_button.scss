@@ -30,6 +30,9 @@
       letter-spacing: 0.14em;
       padding: 15px 5px;
     }
+    @media screen and (min-width: $desktop-up) {
+      margin-right: 0;
+    }
   }
 
   &--mobile {

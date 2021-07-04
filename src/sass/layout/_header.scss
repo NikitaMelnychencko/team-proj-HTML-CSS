@@ -18,5 +18,10 @@
   display: none;
   @media screen and (min-width: $desktop-up) {
     display: flex;
+
+    margin-left: 144px;
   }
+}
+.site-nav__item + .site-nav__item {
+  margin-left: 40px;
 }
