@@ -113,7 +113,7 @@ img {
 
 .hero__title {
   text-align: start;
-  margin-bottom: 30px;
+  margin-bottom: 54px;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.30;
@@ -244,5 +244,39 @@ img {
   left: 50%;
   -webkit-transform: translate(-47%, -47%);
           transform: translate(-47%, -47%);
+}
+
+.advantages__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 21px;
+  width: 216px;
+}
+
+.advanrages__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.65;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #111518;
+}
+
+.advantages__list-item-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__icon {
+  width: 60px;
+  height: 60px;
 }
 /*# sourceMappingURL=main.css.map */
