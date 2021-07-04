@@ -18,12 +18,19 @@
     overflow-y: auto;
     padding: 110px 0 0 0;
     margin-left: auto;
+
+    @media screen and (min-width: $tablet-general) {
+      padding: 150px 0 0 0;
+    }
   }
 }
 
 .main-nav-mobile {
   display: flex;
   justify-content: flex-start;
+  @media screen and (min-width: $tablet-general) {
+    justify-content: center;
+  }
 }
 
 .site-nav-mobile__link {
@@ -34,6 +41,10 @@
   letter-spacing: 0.03em;
 
   color: $secondary-title-text-color;
+
+  @media screen and (min-width: $tablet-general) {
+    font-size: 26px;
+  }
 
   &:hover,
   &:focus {
