@@ -1,0 +1,14 @@
+// Put to list for negative margins
+@mixin grid-list($gapX, $gapY) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -$gapY;
+  margin-left: -$gapX;
+}
+
+// Put to item to make columns  and margins
+@mixin grid-item($column, $gapX, $gapY) {
+  margin-top: $gapY;
+  margin-left: $gapX;
+  flex-basis: calc((100% / #{$column}) - #{$gapX});
+}
