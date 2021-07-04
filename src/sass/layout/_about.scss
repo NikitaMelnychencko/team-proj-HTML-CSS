@@ -9,7 +9,7 @@
 }
 
 .about__img {
-  width: 243px;
+  min-width: 243px;
 
   margin-bottom: 20.42px;
 }
@@ -25,33 +25,25 @@
 
 .about__list {
   padding-top: 20px;
-  padding-bottom: 35px;
-  margin-bottom: 15px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
   position: relative;
 
-  &::before {
-    display: block;
-    content: '';
-    width: 100%;
-    position: absolute;
-    top: 0;
-
-    border-bottom-style: solid;
-    border-top-color: $primary-text-color;
-  }
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: $primary-text-color;
 
   &::after {
     display: block;
     content: '';
     width: 20px;
     height: 2px;
+
     position: absolute;
     left: 0;
     bottom: 0;
 
-    background-image: url(../images/img/mobile/page-about/about-line.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $accent-color;
   }
 }
 
@@ -79,9 +71,10 @@
 }
 
 .about__text {
-  margin-bottom: 29px;
+  margin-bottom: 36px;
 
   line-height: 2.2;
+  letter-spacing: normal;
 }
 
 .about__link {
@@ -97,14 +90,15 @@
   }
 }
 
-@media (min-width: $mobile-general) {
-}
-
 @media (min-width: $tablet-general) {
   .about__title {
     margin-bottom: 30px;
 
     font-size: 26px;
+  }
+
+  .about__list {
+    padding-bottom: 50px;
   }
 
   .about__position {
@@ -131,6 +125,8 @@
   .about__text {
     font-size: 10px;
     line-height: 2.8;
+
+    margin-bottom: 30px;
   }
 }
 
@@ -142,7 +138,7 @@
   }
 
   .about__img {
-    width: 579px;
+    min-width: 579px;
     height: auto;
     margin-right: 32.79px;
   }
@@ -180,6 +176,8 @@
   .about__text {
     font-size: 18px;
     line-height: 1.6;
+
+    margin-bottom: 22px;
   }
 
   .about__link {
