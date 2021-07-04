@@ -91,17 +91,50 @@ img {
 
 .hero {
   text-align: center;
-  padding-top: 70px;
-  padding-bottom: 60px;
-  background: url("../images/img/mobile/Vector-1.png") no-repeat;
-  background: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f1f1f1;
+  background-image: url("../images/img/mobile/Vector-mobile-1.png");
   -webkit-box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
           box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/img/mobile/Vector-mobile-1@2x.png");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: url("../images/img/tablet/Vector-tablet-1.png");
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/img/tablet/Vector-tablet-1@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/img/desktop/Vector-desktop-1.png");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/img/desktop/Vector-desktop-1@2x.png");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__section {
-    text-align: st;
+    text-align: start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -127,7 +160,7 @@ img {
 
 .hero__title {
   text-align: start;
-  margin-bottom: 54px;
+  margin-bottom: 24px;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.30;

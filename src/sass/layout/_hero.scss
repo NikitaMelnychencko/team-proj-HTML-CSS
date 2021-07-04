@@ -1,19 +1,50 @@
 .hero{
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 60px;
-    background: url("../images/img/mobile/Vector-1.png") no-repeat;
-    background: $third-background-color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $third-background-color;
+    background-image: url("../images/img/mobile/Vector-mobile-1.png");
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/img/mobile/Vector-mobile-1@2x.png");
+        }
 
+
+        @media screen and (min-width:$mobile-general){
+        background-image: url('../images/img/tablet/Vector-tablet-1.png');
+  
+
+    @media (min-device-pixel-ratio: 2) and (min-width:$mobile-general),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/img/tablet/Vector-tablet-1@2x.png');
+        }
+    }
+
+      @media screen and (min-width:$tablet-general){
+        background-image: url('../images/img/desktop/Vector-desktop-1.png');
+  
+
+    @media (min-device-pixel-ratio: 2) and (min-width:$tablet-general),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/img/desktop/Vector-desktop-1@2x.png');
+        }
+    }
+     
+     
     
     &__section{
     @media screen and (min-width:$tablet-general){
-        text-align: st;
+        text-align: start;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
 
      @media screen and (min-width:$desktop-up){
@@ -29,7 +60,7 @@
 
 .hero__title{
     text-align: start;
-    margin-bottom: 54px;
+    margin-bottom: 24px;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.30;
