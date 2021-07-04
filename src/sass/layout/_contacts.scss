@@ -3,7 +3,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    background-image: 
+      url("../images/img/mobile/page-contacts/contacts-bg.webp"), url("../images/img/mobile/page-contacts/contacts-bg.jpg");
     &__container {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -17,6 +18,11 @@
         letter-spacing: 0.03em;
         color: $secondary-title-text-color;
         margin-bottom: 30px;
+
+        @media screen and (min-width: $tablet-general) {
+            font-size: 26px;
+            line-height: 1.31;
+        }
     }
 
     &__description {
@@ -71,9 +77,7 @@
     
   }
 
-  @media screen and (min-width: $tablet-general) {
-    
-  }
+ 
 
   @media screen and (min-width: $desktop-up) {
     
