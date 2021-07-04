@@ -2,7 +2,7 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    max-width: 1600px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $third-background-color;
@@ -127,6 +127,7 @@
     background-color: $selection-title-text-color;
     border:none;
     cursor: pointer;
+   
 
 @media screen and (min-width:$tablet-general){
     width: 260px;
@@ -142,8 +143,6 @@
     align-items: center;
     letter-spacing: 0.14em;
     }
- 
-
 }
 
 .hero__img{
@@ -165,10 +164,9 @@
         max-width:unset;
     }
 
-    }
+}
 
-.hero__img--transparent{
-        
+.hero__img--transparent{    
           @media screen and (min-width:$desktop-up){
         max-width:unset;
     }
