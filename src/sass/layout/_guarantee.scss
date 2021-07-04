@@ -21,9 +21,8 @@
 
 .guarant__item {
   position: relative;
-  display: flex;
 
-  width: 245px;
+  height: 75px;
 
   color: $secondary-text-color;
 
@@ -73,7 +72,7 @@
   }
 
   &:nth-child(3):after {
-    bottom: -35px;
+    bottom: -30px;
   }
 }
 
@@ -93,7 +92,7 @@
   }
 
   .guarant__item {
-    width: auto;
+    height: auto;
 
     &::before {
       left: -24.33px;
