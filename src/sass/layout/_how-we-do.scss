@@ -21,6 +21,8 @@
 
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
+  transition: background-color $time-cubic;
+
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -32,6 +34,8 @@
 
   text-align: center;
   fill: $accent-color;
+
+  transition: fill $time-cubic;
 
   .how-we-do__link:hover &,
   .how-we-do__link:focus & {
@@ -51,9 +55,7 @@
 
   color: $primary-title-text-color;
 
-  //   &--shift {
-  //     display: block;
-  //   }
+  transition: color $time-cubic;
 
   .how-we-do__link:hover &,
   .how-we-do__link:focus & {
@@ -69,6 +71,15 @@
 
   color: $primary-text-color;
 
+  transition: color $time-cubic;
+
+  .how-we-do__link:hover &,
+  .how-we-do__link:focus & {
+    color: $third-text-color;
+
+    transition: color $time-cubic;
+  }
+
   &::before {
     display: block;
     content: '—';
@@ -79,17 +90,11 @@
     letter-spacing: 0.08em;
 
     color: $accent-color;
-  }
 
-  //   &--shift {
-  //     display: block;
-  //   }
+    transition: color $time-cubic;
 
-  .how-we-do__link:hover &,
-  .how-we-do__link:focus & {
-    color: $third-text-color;
-
-    &::before {
+    .how-we-do__link:hover &,
+    .how-we-do__link:focus & {
       color: $third-text-color;
     }
   }
@@ -140,8 +145,8 @@
   }
 
   .how-we-do__link {
-    padding-right: 29px;
-    padding-left: 29px;
+    padding-right: 30px;
+    padding-left: 30px;
     min-height: 396px;
   }
 
