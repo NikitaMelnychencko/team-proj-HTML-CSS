@@ -14,8 +14,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (min-width: $mobile-general) {
-    width: $mobile-general;
+  @media screen and (min-width: $mobile-first) {
+    min-width: $mobile-first;
   }
 
   @media screen and (min-width: $tablet-general) {
