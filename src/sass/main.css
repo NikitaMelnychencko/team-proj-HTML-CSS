@@ -377,10 +377,24 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 21, 24, 0.4)), to(rgba(17, 21, 24, 0.4))), url("../images/img/mobile/page-contacts/DSC_0970 2.png");
-  background-image: linear-gradient(rgba(17, 21, 24, 0.4), rgba(17, 21, 24, 0.4)), url("../images/img/mobile/page-contacts/DSC_0970 2.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 21, 24, 0.4)), to(rgba(17, 21, 24, 0.4))), url("../images/img/mobile/page-contacts/contacts-bg.png");
+  background-image: linear-gradient(rgba(17, 21, 24, 0.4), rgba(17, 21, 24, 0.4)), url("../images/img/mobile/page-contacts/contacts-bg.png");
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 21, 24, 0.4)), to(rgba(17, 21, 24, 0.4))), url("../images/img/tablet/page-contacts/contacts-bg.png");
+    background-image: linear-gradient(rgba(17, 21, 24, 0.4), rgba(17, 21, 24, 0.4)), url("../images/img/tablet/page-contacts/contacts-bg.png");
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contacts {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 21, 24, 0.4)), to(rgba(17, 21, 24, 0.4))), url("../images/img/desktop/page-contacts/contacts-bg.png");
+    background-image: linear-gradient(rgba(17, 21, 24, 0.4), rgba(17, 21, 24, 0.4)), url("../images/img/desktop/page-contacts/contacts-bg.png");
+  }
 }
 
 .contacts__container {
@@ -388,7 +402,16 @@ img {
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 1366px) {
+  .contacts__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 .contacts__title {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 800;
   font-size: 14px;
   line-height: 1.29;
@@ -407,8 +430,10 @@ img {
 
 @media screen and (min-width: 1366px) {
   .contacts__title {
+    width: 1090px;
     font-size: 46px;
     line-height: 1.3;
+    margin-bottom: 50px;
   }
 }
 
@@ -433,6 +458,7 @@ img {
   .contacts__description {
     font-size: 30px;
     line-height: 1.23;
+    margin-bottom: 50px;
   }
 }
 
@@ -459,22 +485,28 @@ img {
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: 0.08em;
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 .contacts__input::-webkit-input-placeholder {
   padding-left: 28px;
+  color: #ffffff;
 }
 
 .contacts__input:-ms-input-placeholder {
   padding-left: 28px;
+  color: #ffffff;
 }
 
 .contacts__input::-ms-input-placeholder {
   padding-left: 28px;
+  color: #ffffff;
 }
 
 .contacts__input::placeholder {
   padding-left: 28px;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -489,6 +521,7 @@ img {
     height: 70px;
     font-size: 20px;
     line-height: 1.2;
+    margin-bottom: 30px;
   }
 }
 
