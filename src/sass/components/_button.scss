@@ -18,6 +18,11 @@
   padding: 17px 36px;
   background-color: transparent;
   color: $selection-title-text-color;
+
+  &:focus {
+    outline: 1px solid $secondary-accent-color;
+  }
+
   &--tablet-up {
     display: none;
     @media screen and (min-width: $tablet-general) {
@@ -26,12 +31,15 @@
       margin-right: 60px;
       font-weight: bold;
       font-size: 14px;
-      line-height: 17px;
+      line-height: 1.21;
       letter-spacing: 0.14em;
       padding: 15px 5px;
+      min-width: 260px;
     }
     @media screen and (min-width: $desktop-up) {
       margin-right: 0;
+      padding: 27px 24px 26px 24px;
+      min-width: 336px;
     }
   }
 
@@ -70,7 +78,7 @@
     color: #ffffff;
   }
   @media screen and (min-width: $tablet-general) {
-    top: 60px;
+    top: 53px;
   }
   @media screen and (min-width: $desktop-up) {
     display: none;

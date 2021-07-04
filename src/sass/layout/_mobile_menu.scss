@@ -10,6 +10,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  z-index: 2;
 
   background-color: $menu-background-color;
 
@@ -24,7 +25,18 @@
     }
   }
 }
+.site-nav__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $primary-text-color;
 
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
 .main-nav-mobile {
   display: flex;
   justify-content: flex-start;
