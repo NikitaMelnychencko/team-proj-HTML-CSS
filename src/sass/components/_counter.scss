@@ -1,0 +1,15 @@
+.list__counter {
+  counter-reset: problems__item;
+}
+
+.item__counter {
+  &::before {
+    counter-increment: problems__item;
+    display: block;
+    content: '— 0' counter(problems__item);
+
+    margin-bottom: 5px;
+
+    color: $accent-color;
+  }
+}
