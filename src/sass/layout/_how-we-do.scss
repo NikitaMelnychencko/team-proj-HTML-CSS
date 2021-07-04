@@ -26,6 +26,10 @@
 
   &:not(:last-child) {
     margin-bottom: 15px;
+
+    &:hover {
+      background-color: $accent-color;
+    }
   }
 }
 
@@ -34,6 +38,10 @@
 
   text-align: center;
   fill: $accent-color;
+
+  .how-we-do__item:hover & {
+    fill: $third-text-color;
+  }
 }
 
 .how-we-do__name {
