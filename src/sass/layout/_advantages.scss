@@ -6,16 +6,25 @@
 
 
 .advantages__list{
+    display: block;
+  
+
+@media screen and (min-width:$tablet-general){
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: inherit;
+    justify-content: space-between;
     align-items: center;
+        }
+
 }
 .advantages__list-item{
     
     display: flex;
     margin-bottom: 21px;
     align-items: center;
+    @media screen and (min-width:$tablet-general){
+    margin-bottom: 0;
+        }
 
 }
 
@@ -26,6 +35,12 @@
     line-height: 1.65;
     align-items: center;
     color: $primary-title-text-color;
+ @media screen and (min-width:$desktop-up){
+            margin-left: -20px;
+            font-size: 20px;
+            line-height: 1.65;
+        }
+
 }
 
 .advantages__list-item-icon{
@@ -45,11 +60,13 @@
 }
 
 .advantages__icon-desk{
-    display: block;
+    display: none;
     width: 120px;
     height: 102px;
+    @media screen and (min-width:$desktop-up){
+            display: block;
+           
+        }
 }
 
-// .advantages__list-block{
-//     width: 216px;
-// }
+
