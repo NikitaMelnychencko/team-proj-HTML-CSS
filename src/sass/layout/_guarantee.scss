@@ -47,7 +47,7 @@
   &:not(:last-child)::after {
     display: block;
     content: '';
-    height: 50px;
+    height: 68px;
 
     position: absolute;
     left: -14px;
@@ -62,7 +62,7 @@
   }
 
   & + &::after {
-    bottom: -35px;
+    bottom: -30px;
   }
 }
 
@@ -71,6 +71,12 @@
 }
 
 @media (min-width: $tablet-general) {
+  .guarant__back {
+    width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .guarant__list {
     padding: 30px 50px 30px 79px;
   }
@@ -105,6 +111,10 @@
 }
 
 @media (min-width: $desktop-up) {
+  .guarant__back {
+    width: 1343px;
+  }
+
   .guarant__title {
     font-size: 46px;
   }
