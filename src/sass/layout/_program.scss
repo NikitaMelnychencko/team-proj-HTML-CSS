@@ -55,7 +55,7 @@
     @media screen and (min-width: 1366px) {
       width: 653px;
       height: 502px;
-      top: 670px;
+      top: 625px;
       left: -157px;
       background-image: url(../images/img/desktop/program/program-photo-desktop.png);
 
@@ -169,9 +169,11 @@
   @media screen and (min-width: 1366px) {
     margin-bottom: 25px;
     font-size: 20px;
+    line-height: 1.4;
 
     &::first-letter {
       font-size: 30px;
+      line-height: 0.93;
     }
   }
 
@@ -272,11 +274,13 @@
 }
 
 //Topic-list-item
-.program-section__topic-list-item {
+
+.program-section__topic-list-text {
   font-weight: 500;
   opacity: 0.5;
 
   @media screen and (min-width: 1366px) {
     font-size: 18px;
+    line-height: 1.56;
   }
 }
