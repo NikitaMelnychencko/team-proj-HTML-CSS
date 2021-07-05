@@ -1,7 +1,5 @@
 .hero{
     text-align: center;
-    max-width: 1600px;
-    padding-bottom: 70px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,14 +36,24 @@
     }
      
         &__section{
-
+        height: 556px;
+   
         @media screen and (min-width:$tablet-general){
-
             display: flex;
             justify-content: center;
             align-items: center;
             
         }
+
+        @media screen and (min-width:$desktop-up){
+            height: 842px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+
 
    
     }
@@ -56,11 +64,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
 
     @media screen and (min-width:$tablet-general){
-        margin-bottom: 0;
         align-items: flex-start;
+        padding-bottom: 137px;
+    }
+
+    @media screen and (min-width:$desktop-up){
+        padding-bottom: 250px;
     }
 }
 
@@ -83,11 +94,13 @@
         color: $primary-title-text-color;
 
     @media screen and (min-width:$tablet-general){
+        width: 320px;
         font-size: 26px;
         line-height: 1.30; 
     }
 
      @media screen and (min-width:$desktop-up){
+        width:530px;
         display: inline-block;
         font-size: 58px;
         line-height: 1.30;
