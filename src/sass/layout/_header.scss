@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+}
+
+.main-nav {
+  position: relative;
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-general) {
+    padding: 41px 0;
+  }
+}
+
+.site-nav {
+  display: none;
+  @media screen and (min-width: $desktop-up) {
+    display: flex;
+
+    margin-left: 144px;
+  }
+}
+.site-nav__item + .site-nav__item {
+  margin-left: 40px;
+}
