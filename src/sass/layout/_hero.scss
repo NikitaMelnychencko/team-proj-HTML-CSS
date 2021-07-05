@@ -1,6 +1,7 @@
 .hero{
     text-align: center;
     max-width: 1600px;
+    padding-bottom: 70px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,23 +37,20 @@
         }
     }
      
-     
-    
-    &__section{
-    @media screen and (min-width:$tablet-general){
+        &__section{
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        @media screen and (min-width:$tablet-general){
 
-     @media screen and (min-width:$desktop-up){
-        // padding-top: 30px;
-        // padding-bottom: 0;
-        
-    }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+   
     }
 }
+
 .hero__section-info{
         display: flex;
         flex-direction: column;
@@ -83,16 +81,10 @@
         line-height: 1.30;
         letter-spacing: 0.03em;
         color: $primary-title-text-color;
-    @media screen and (min-width:$mobile-general){
-        text-align: center;
-       
-    }
 
     @media screen and (min-width:$tablet-general){
         font-size: 26px;
-        line-height: 1.30;
-        text-align: left;
-        
+        line-height: 1.30; 
     }
 
      @media screen and (min-width:$desktop-up){
@@ -118,7 +110,6 @@
 }
 
 .hero__subtitle{
-        margin-bottom: 52px;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.57;
@@ -128,6 +119,7 @@
      &.color{
         display: flex;
         color: $selection-text-color;
+        
         @media screen and (min-width:$desktop-up){
         font-size: 20px;
         line-height: 1.64;
@@ -142,7 +134,7 @@
     }
 
      @media screen and (min-width:$desktop-up){
-        font-size: 20px;
+        font-size: 19px;
         line-height: 1.65;
         
     }
@@ -154,6 +146,7 @@
     padding: 14px 0;
     font-weight: 700;
     margin-bottom: 55px;
+    margin-top: 50px;
     font-size: 12px;
     line-height: 1.25;
     align-items: center;
@@ -184,7 +177,6 @@
     }
 
 .hero__img{
-     
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +190,7 @@
 
         &-animation{
             position: relative;
-                }
+        }
 
         &-absolut{
         position:absolute;

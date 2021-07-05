@@ -425,6 +425,7 @@ img {
 .hero {
   text-align: center;
   max-width: 1600px;
+  padding-bottom: 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -528,17 +529,10 @@ img {
   color: #111518;
 }
 
-@media screen and (min-width: 480px) {
-  .hero__title {
-    text-align: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.30;
-    text-align: left;
   }
 }
 
@@ -567,7 +561,6 @@ img {
 }
 
 .hero__subtitle {
-  margin-bottom: 52px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.57;
@@ -600,7 +593,7 @@ img {
 
 @media screen and (min-width: 1366px) {
   .hero__subtitle {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.65;
   }
 }
@@ -610,6 +603,7 @@ img {
   padding: 14px 0;
   font-weight: 700;
   margin-bottom: 55px;
+  margin-top: 50px;
   font-size: 12px;
   line-height: 1.25;
   -webkit-box-align: center;
