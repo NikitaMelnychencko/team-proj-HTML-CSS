@@ -44,7 +44,6 @@
 }
 
 .how-we-do__name {
-  min-height: 56px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -78,12 +77,13 @@
   .how-we-do__link:hover &,
   .how-we-do__link:focus & {
     color: $third-text-color;
-
-    transition: color $time-cubic;
   }
 
   &::before {
-    display: block;
+    display: flex;
+    justify-content: center;
+
+    align-content: flex-start;
     content: '—';
 
     font-weight: bold;
@@ -103,9 +103,15 @@
 }
 
 @media screen and (max-width: $mobile-only) {
+  .how-we-do__link {
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+
   .how-we-do__item:not(:last-child) {
     margin-bottom: 15px;
   }
+
   .how-we-do__description {
     padding-right: 10px;
     padding-left: 10px;
@@ -124,6 +130,7 @@
   .how-we-do__link {
     padding-top: 40px;
     padding-right: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     min-height: 334px;
   }
@@ -132,12 +139,22 @@
     margin-bottom: 30px;
   }
 
-  .how-we-do__description {
-    line-height: 2.33;
+  .how-we-do__name {
+    min-height: 56px;
   }
 }
 
 @media screen and (min-width: $desktop-up) {
+  .how-we-do__title {
+    margin-bottom: 50px;
+    padding-top: 80px;
+
+    text-align: left;
+
+    font-size: 46px;
+    letter-spacing: 0.03em;
+  }
+
   .how-we-do__list {
     @include grid-list(20px, 20px);
   }
@@ -152,18 +169,7 @@
     min-height: 396px;
   }
 
-  .how-we-do__title {
-    margin-bottom: 62px;
-
-    text-align: left;
-
-    font-size: 46px;
-    letter-spacing: 0.03em;
-  }
-
   .how-we-do__name {
-    max-width: 365px;
-
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.08em;
