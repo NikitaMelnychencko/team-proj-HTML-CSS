@@ -1,7 +1,6 @@
 .hero{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    max-width: 1600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,57 +40,59 @@
     
     &__section{
     @media screen and (min-width:$tablet-general){
-        text-align: start;
+
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
      @media screen and (min-width:$desktop-up){
-        padding-top: 30px;
-        padding-bottom: 0;
+        // padding-top: 30px;
+        // padding-bottom: 0;
         
     }
     }
 }
 .hero__section-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
 
-    @media screen and (min-width:$desktop-up){
+    @media screen and (min-width:$tablet-general){
         margin-bottom: 0;
+        align-items: flex-start;
     }
 }
 
 
 .hero__section-info-title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 }
 
+
 .hero__title{
-    text-align: left;
-    margin-bottom: 24px;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.30;
-    letter-spacing: 0.03em;
-    color: $primary-title-text-color;
+        text-align: left;
+        margin-bottom: 8px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.30;
+        letter-spacing: 0.03em;
+        color: $primary-title-text-color;
     @media screen and (min-width:$mobile-general){
         text-align: center;
        
     }
 
     @media screen and (min-width:$tablet-general){
-        text-align: left;
-        margin-bottom: 95px;
-        font-size: 20px;
+        font-size: 26px;
         line-height: 1.30;
+        text-align: left;
+        
     }
 
      @media screen and (min-width:$desktop-up){
@@ -102,30 +103,35 @@
 }
 
 .hero__text{
-    // display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.57;
-    text-align: left;
-    color: $primary-text-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.57;
+        text-align: left;
+        color: $primary-text-color;
 
-     @media screen and (min-width:$tablet-general){
+     @media screen and (min-width:$desktop-up){
         // align-self: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.64;
     }
 }
 
 .hero__subtitle{
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.57;
-    text-align: start;
-    color: $primary-title-text-color;
+        margin-bottom: 52px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.57;
+        text-align: start;
+        letter-spacing: 0.08em;
+        color: $primary-title-text-color;
      &.color{
-         display: flex;
+        display: flex;
         color: $selection-text-color;
-         @media screen and (min-width:$desktop-up){
-            display: inline-block;
+        @media screen and (min-width:$desktop-up){
+        font-size: 20px;
+        line-height: 1.64;
+        display: inline-block;
     }
 
 
@@ -147,6 +153,7 @@
     width: 100%;
     padding: 14px 0;
     font-weight: 700;
+    margin-bottom: 55px;
     font-size: 12px;
     line-height: 1.25;
     align-items: center;
@@ -159,56 +166,49 @@
 
    @media screen and (min-width:$mobile-first){
        width: 260px;
-        margin: 0;
    }
 
-@media screen and (min-width:$desktop-up){
-    width: 354px;
-    padding: 27px 70px;
-    font-size: 14px;
-    line-height: 1.21;
-    align-items: center;
-    letter-spacing: 0.14em;
+   @media screen and (min-width:$tablet-general){
+       margin-bottom: 0;
+   }
+
+    @media screen and (min-width:$desktop-up){
+        width: 0;
+        width: 354px;
+        padding: 27px 70px;
+        font-size: 14px;
+        line-height: 1.21;
+        align-items: center;
+        letter-spacing: 0.14em;
+        }
     }
-}
 
 .hero__img{
      
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    
 
-
-&--transparent{  
-    animation: fadeInLeftBig  1500ms cubic-bezier(0.4, 0, 0.2, 1);
-          @media screen and (min-width:$desktop-up){
-        max-width:unset;
-    }
-    }
-
-    &-animation{
-        position: relative;
+        &--transparent{  
+            animation: fadeInLeftBig  1500ms cubic-bezier(0.4, 0, 0.2, 1);
+                @media screen and (min-width:$desktop-up){
+                max-width:unset;
             }
+        }
 
-    &-absolut{
-    position:absolute;
-    }
-    &--nottransparent{
-        display: block;
-        animation: fadeInRightBig 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+        &-animation{
+            position: relative;
+                }
+
+        &-absolut{
+        position:absolute;
+        }
+
+        &--nottransparent{
+            display: block;
+            animation: fadeInRightBig 1500ms cubic-bezier(0.4, 0, 0.2, 1);
         
         @media screen and (min-width:$desktop-up){
             max-width:unset;
         }
   }  }
-  
-.test{
-text-align: start;
-display: flex;
-
-@media screen and (min-width:$tablet-general) {
-    display: inline-block;
-}
-}
