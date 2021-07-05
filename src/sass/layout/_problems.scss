@@ -112,17 +112,17 @@
   }
 
   .problems__item {
-    @include grid-item(3, 40px, 30px);
+    @include grid-item(3, 40px, 32px);
 
     &::before {
+      margin-bottom: 10px;
+
       font-size: 20px;
       line-height: 1.65;
     }
   }
 
   .problems__description {
-    margin-bottom: 10px;
-
     font-size: 20px;
     line-height: 1.4;
   }
