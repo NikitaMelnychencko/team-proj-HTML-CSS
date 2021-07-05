@@ -35,16 +35,19 @@
 }
 
 .problems__item {
-  font-weight: bold;
+  &::before {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+  }
+}
+
+.problems__description {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
 
   color: $primary-title-text-color;
-
-  &::before {
-    font-size: 14px;
-    line-height: 1.2;
-  }
 }
 
 @media screen and (max-width: $mobile-only) {
@@ -74,11 +77,11 @@
   }
 
   .problems__list {
-    @include grid-list(42px, 16px);
+    @include grid-list(42px, 20px);
   }
 
   .problems__item {
-    @include grid-item(2, 42px, 16px);
+    @include grid-item(2, 42px, 20px);
   }
 }
 
@@ -87,35 +90,40 @@
     background-image: url('../../src/images/svg/problems-bg.svg'),
       linear-gradient(
         to bottom,
-        $secondary-background-color 548px,
-        $primary-background-color 548px
+        $secondary-background-color 560px,
+        $primary-background-color 560px
       );
-    background-position: top 103px right, center;
+    background-position: top 88px right, center;
   }
 
   .problems__title {
-    margin-bottom: 63px;
-    padding-top: 115px;
+    margin-bottom: 70px;
+    padding-top: 100px;
 
     font-size: 46px;
   }
 
   .problems__board {
-    padding: 68px 112px 60px 114px;
+    padding: 70px 114px 62px 114px;
   }
 
   .problems__list {
-    @include grid-list(40px, 30px);
+    @include grid-list(40px, 32px);
   }
 
   .problems__item {
     @include grid-item(3, 40px, 30px);
 
-    font-size: 20px;
-    line-height: 1.4;
-
     &::before {
+      font-size: 20px;
       line-height: 1.65;
     }
+  }
+
+  .problems__description {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
