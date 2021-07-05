@@ -1,0 +1,117 @@
+//Benefits section
+.benefits-section {
+  background-color: $secondary-background-color;
+
+  @media screen and (max-width: 767px) {
+    height: 485px;
+    margin-bottom: 270px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    height: 200px;
+    margin-bottom: 302px;
+  }
+  @media screen and (min-width: 1366px) {
+    height: 200px;
+    margin-bottom: 330px;
+  }
+}
+
+//Section content
+.benefits-section__content {
+  position: relative;
+}
+
+//Section-list content (positioning)
+.benefits-section__list-content {
+  background-color: $primary-background-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 15px 20px 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    width: 688px;
+    padding: 35px 118px 40px 98px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding: 70px 82px;
+    width: 1314px;
+  }
+}
+
+//section-title
+.benefits-section__title {
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: $secondary-title-text-color;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    width: 180px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1366px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+//section-list
+.benefits-section__list {
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @include grid-list(20px, 40px);
+  }
+
+  @media screen and (min-width: 1366px) {
+    @include grid-list(40px, 32px);
+  }
+}
+
+//list-item
+.benefits-section__list-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+
+  color: $primary-title-text-color;
+
+  @media screen and (max-width: 767px) {
+    min-height: 60px;
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @include grid-item(2, 20px, 40px);
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 20px;
+    @include grid-item(3, 40px, 32px);
+  }
+}
