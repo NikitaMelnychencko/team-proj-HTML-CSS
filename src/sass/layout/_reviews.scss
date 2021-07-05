@@ -50,7 +50,7 @@
 .slider {
   box-sizing: border-box;
 }
-.review-title {
+.reviews__title {
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
@@ -137,7 +137,7 @@
   margin: 20px;
 }
 
-.nav-review {
+.review-slide__nav-slider-box {
   position: relative;
   width: 100%;
 }
@@ -163,21 +163,21 @@
     right: -140px;
 }
 }
-.mthw {
+.review-slide__card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media screen and (min-width: $tablet-general) {
-  .mthw {
+  .review-slide__card {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
 }
 
-.picture-review {
+.review-slide__portrait {
   background-color: teal;
   border-radius: 50%;
   width: 90px;
@@ -187,7 +187,7 @@
 }
 
 @media screen and (min-width: $tablet-general) {
-  .picture-review {
+  .review-slide__portrait {
     width: 150px;
     height: 150px;
   }
@@ -204,7 +204,7 @@
   margin-bottom: 20px;
 }
 
-.review-name {
+.review-slide__name-comment {
   font-weight: 800;
   font-size: 14px;
   line-height: 1.21;
@@ -224,7 +224,7 @@
 
 
 
-.review-about {
+.review-slide__about {
   font-weight: 500;
   line-height: 1.25;
   text-align: center;
@@ -233,7 +233,7 @@
 }
 
 @media screen and (min-width: $tablet-general) {
-  .review-about {
+  .review-slide__about {
     text-align: left;
     margin-bottom: 20px;
     max-width: 500px;
@@ -241,7 +241,7 @@
 }
 
 @media screen and (min-width: $desktop-up) {
-  .review-about {
+  .review-slide__about {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.21;
@@ -249,7 +249,7 @@
   }
 }
 
-.review-article {
+.review-slide__comment {
   font-weight: 500;
   text-align: center;
   color: $secondary-text-color;
@@ -335,7 +335,7 @@
   }
 }
 
-.list-review-nav-item {
+.review-slide__nav-slider-link {
   font-size: 20;
   height: 54px;
   width: 54px;
@@ -353,11 +353,11 @@
       max-width: 1400px;
     }
 }
-.slider .slick-current:not(.mthw) {
+.slider .slick-current:not(.review-slide__card) {
   box-shadow: 0px 0px 0px 1.5px $accent-color inset;
 }
 
-.block-review-first {
+.review-slide__first-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,7 +368,7 @@
 
 
 
-.block-review-second {
+.review-slide__second-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -392,16 +392,16 @@
   }
 }
 
-.review-social-svg {
+.review-slide__social-svg {
   fill: #436eab;
 }
 
-.mthw.slick-slide {
+.review-slide__card.slick-slide {
   margin-right: 5px;
   margin-left: 5px;
 }
 
-.review-rm {
+.review-slide__read-more-link {
   text-decoration-line: underline;
   color: $accent-color;
 }

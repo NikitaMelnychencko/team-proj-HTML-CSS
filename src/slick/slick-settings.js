@@ -25,12 +25,12 @@ $(document).ready(function(){
         },{
             breakpoint: 768,
             settings: {
-                appendArrows: $('.nav-review'),
+                appendArrows: $('.review-slide__nav-slider-box'),
                 autoplay: false,
              }
                    },
                     {
-            breakpoint: 1681,
+            breakpoint: 1367,
             settings: {
                 autoplay: false,
              }
@@ -76,7 +76,7 @@ $('.slider-nav').slick({
                                     }
                                     },
                                      {
-            breakpoint: 1681,
+            breakpoint: 1367,
             settings: {
                 autoplay: false,
              }
