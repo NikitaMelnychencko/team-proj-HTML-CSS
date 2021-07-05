@@ -1,0 +1,59 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .modal-open &--absolute {
+    position: absolute;
+    top: 30px;
+
+    z-index: 100;
+
+    @media screen and (min-width: $tablet-general) {
+      top: 41px;
+    }
+  }
+}
+.top-part {
+  display: flex;
+}
+.top-part__left,
+.top-part__riht {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+
+  letter-spacing: 0.04em;
+  color: $primary-title-text-color;
+  .modal-open & {
+    color: $secondary-title-text-color;
+  }
+}
+
+.top-part__svg {
+  display: flex;
+  width: 22px;
+  height: 30px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.bottom-part {
+  display: flex;
+  margin-top: 5px;
+}
+.bottom-part__left,
+.bottom-part__riht {
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $primary-title-text-color;
+}
+.bottom-part__left {
+  margin-right: 6px;
+  color: #ff6b09;
+}
+.modal-open .bottom-part__riht {
+  color: $secondary-title-text-color;
+}

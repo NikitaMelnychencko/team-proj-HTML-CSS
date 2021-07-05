@@ -32,5 +32,9 @@ body {
 }
 
 section {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+.modal-open {
+  overflow: hidden;
 }
