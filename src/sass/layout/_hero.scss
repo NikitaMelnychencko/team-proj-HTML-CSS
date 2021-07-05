@@ -55,40 +55,63 @@
     }
 }
 .hero__section-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
+
+    @media screen and (min-width:$desktop-up){
+        margin-bottom: 0;
+    }
+}
+
+
+.hero__section-info-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero__title{
-    text-align: start;
+    text-align: left;
     margin-bottom: 24px;
     font-weight: 800;
     font-size: 20px;
     line-height: 1.30;
     letter-spacing: 0.03em;
     color: $primary-title-text-color;
+    @media screen and (min-width:$mobile-general){
+        text-align: center;
+       
+    }
 
     @media screen and (min-width:$tablet-general){
+        text-align: left;
         margin-bottom: 95px;
         font-size: 20px;
         line-height: 1.30;
     }
 
      @media screen and (min-width:$desktop-up){
+        display: inline-block;
         font-size: 58px;
         line-height: 1.30;
-        
     }
 }
 
 .hero__text{
+    // display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.57;
-    text-align: start;
+    text-align: left;
     color: $primary-text-color;
 
-    
-
+     @media screen and (min-width:$tablet-general){
+        // align-self: center;
+    }
 }
 
 .hero__subtitle{
@@ -99,7 +122,13 @@
     text-align: start;
     color: $primary-title-text-color;
      &.color{
-    color: $selection-text-color;
+         display: flex;
+        color: $selection-text-color;
+         @media screen and (min-width:$desktop-up){
+            display: inline-block;
+    }
+
+
     }
       @media screen and (min-width:$tablet-general){
         font-size: 14px;
@@ -116,7 +145,7 @@
 
 .button{
     width: 100%;
-    padding: 17px 46px;
+    padding: 14px 0;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
@@ -127,13 +156,11 @@
     background-color: $selection-title-text-color;
     border:none;
     cursor: pointer;
-   
 
-@media screen and (min-width:$tablet-general){
-    width: 260px;
+   @media screen and (min-width:$mobile-first){
+       width: 260px;
         margin: 0;
-        padding: 14px 0;
-    }
+   }
 
 @media screen and (min-width:$desktop-up){
     width: 354px;
@@ -152,30 +179,36 @@
     align-items: center;
     width: 100%;
     
-   
-}
 
-.hero__img--transparent{  
-    animation: backInLeft  1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&--transparent{  
+    animation: fadeInLeftBig  1500ms cubic-bezier(0.4, 0, 0.2, 1);
           @media screen and (min-width:$desktop-up){
         max-width:unset;
     }
     }
 
-    .hero__img-animation{
+    &-animation{
         position: relative;
             }
 
-    .hero__img-absolut{
+    &-absolut{
     position:absolute;
     }
-    .hero__img--nottransparent{
+    &--nottransparent{
         display: block;
-        animation: bounceInRight 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+        animation: fadeInRightBig 1500ms cubic-bezier(0.4, 0, 0.2, 1);
         
         @media screen and (min-width:$desktop-up){
             max-width:unset;
         }
+  }  }
+  
+.test{
+text-align: start;
+display: flex;
 
+@media screen and (min-width:$tablet-general) {
+    display: inline-block;
 }
-
+}
