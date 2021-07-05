@@ -1,0 +1,95 @@
+.footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-general) {
+      flex-direction: row;
+    }
+  }
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  .footer__right-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-general) {
+      flex-direction: row;
+      margin-left: auto;
+    }
+    @media screen and (min-width: $desktop-up) {
+      margin-left: 292px;
+    }
+  }
+  &__tel-link {
+    position: relative;
+    display: flex;
+    justify-content: baseline;
+    color: $primary-title-text-color;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    margin-bottom: 30px;
+    margin-right: 45px;
+
+    @media screen and (min-width: $tablet-general) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
+.icon-tel {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: $tablet-general) {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    margin-right: 20px;
+  }
+}
+.rights {
+  display: block;
+  background-color: $secondary-background-color;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  color: $primary-text-color;
+
+  @media screen and (min-width: $tablet-general) {
+    padding-left: 40px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    padding-left: 26px;
+  }
+}
+.instagram {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/svg/instagram.svg');
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-general) {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 0;
+      border: 1px solid $primary-text-color;
+      transform: rotate(90deg);
+      bottom: 50%;
+      left: -45px;
+    }
+  }
+}
