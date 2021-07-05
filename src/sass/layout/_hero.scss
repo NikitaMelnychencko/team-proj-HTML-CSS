@@ -146,28 +146,36 @@
 }
 
 .hero__img{
-    position: relative; 
+     
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    
    
 }
 
-.hero__img--nottransparent{
-    display: block;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-47%, -47%);
-     @media screen and (min-width:$desktop-up){
-        max-width:unset;
-    }
-
-}
-
-.hero__img--transparent{    
+.hero__img--transparent{  
+    animation: backInLeft  1000ms cubic-bezier(0.4, 0, 0.2, 1);
           @media screen and (min-width:$desktop-up){
         max-width:unset;
     }
     }
+
+    .hero__img-animation{
+        position: relative;
+            }
+
+    .hero__img-absolut{
+    position:absolute;
+    }
+    .hero__img--nottransparent{
+        display: block;
+        animation: bounceInRight 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        @media screen and (min-width:$desktop-up){
+            max-width:unset;
+        }
+
+}
+
