@@ -4,7 +4,22 @@
   align-items: center;
     background-color: $third-background-color;
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  padding-top: 0px;
+  @media screen and (min-width: $tablet-general) {
+    padding-top: 30px;
+
+  }
+
 }
+
+.advantages__list > .advantages__list-item:not(:last-child) {
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet-general) {
+    margin-bottom: 0px;
+  }
+}
+
 
 .advantages__list {
   display: block;
@@ -24,7 +39,7 @@
 }
 .advantages__list-item {
   display: flex;
-  margin-bottom: 26px;
+  // margin-bottom: 26px;
   align-items: center;
   justify-content: center;
   @media screen and (min-width: $tablet-general) {

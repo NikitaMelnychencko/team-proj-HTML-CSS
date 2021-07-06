@@ -33,6 +33,9 @@ body {
 
 section {
   padding-bottom: 50px;
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 130px;
+  }
 }
 
 .modal-open,

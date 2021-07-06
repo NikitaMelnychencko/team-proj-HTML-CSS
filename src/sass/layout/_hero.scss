@@ -1,5 +1,5 @@
 .hero {
-  padding-bottom: 120px;
+  padding-bottom: 150px;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,6 +7,9 @@
   background-color: $third-background-color;
   background-image: url('../images/img/tablet/Vector-tablet-1.png');
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  background-position: bottom, left;
+  background-position-x: -50px;
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -27,6 +30,8 @@
     background-image: url('../images/img/desktop/Vector-desktop-1.png');
     padding-bottom: 160px;
 
+    background-position-x: 0px;
+
     @media (min-device-pixel-ratio: 2) and (min-width: $tablet-general),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -34,12 +39,15 @@
     }
   }
 
+  @media screen and (min-width: $desktop-up) {
+    padding-bottom: 80px;
+
+  }
+
   &__section {
     // height: 618px;
-
     //  @media screen and (min-width:$mobile-general){
     //     height: 618px;
-
     // }
 
     @media screen and (min-width: $tablet-general) {
@@ -50,10 +58,12 @@
     @media screen and (min-width: $desktop-up) {
       // height: 842px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
+
     }
   }
+
 }
 
 .hero__section-info {
@@ -61,7 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+
 
   @media screen and (min-width: $tablet-general) {
     align-items: flex-start;
@@ -184,6 +194,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 100%;
+
+
 
   &--transparent {
     animation: fadeInLeftBig 1500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -194,10 +208,21 @@
 
   &-animation {
     position: relative;
+    top: 35px;
+    @media screen and (min-width: $desktop-up) {
+      top: -15px;
+      right: -70px;
+      position: absolute;
+    }
   }
 
   &-absolut {
     position: absolute;
+    top: 15px;
+    @media screen and (min-width: $desktop-up) {
+      top: -45px;
+      right: -30px;
+    }
   }
 
   &--nottransparent {
