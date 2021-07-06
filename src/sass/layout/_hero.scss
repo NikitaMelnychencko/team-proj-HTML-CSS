@@ -29,22 +29,21 @@
         padding-bottom: 0;
   
 
-    @media (min-device-pixel-ratio: 2) and (min-width:$tablet-general),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/img/desktop/Vector-desktop-1@2x.png');
+        @media (min-device-pixel-ratio: 2) and (min-width:$tablet-general),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('../images/img/desktop/Vector-desktop-1@2x.png');
+            }
         }
-    }
      
         &__section{
-        height: 618px;
+            height: 618px;
 
          @media screen and (min-width:$mobile-general){
             height: 556px;
            
         }
 
-   
         @media screen and (min-width:$tablet-general){
             display: flex;
             justify-content: center;
