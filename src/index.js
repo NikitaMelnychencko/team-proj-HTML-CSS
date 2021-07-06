@@ -1,4 +1,7 @@
 import './sass/main.scss';
+window.jQuery = window.$ = require('jquery');
+require('./slick/slick.min.js');
+require('./slick/slick-settings.js');
 
 (() => {
 
@@ -77,6 +80,7 @@ mobileBtnFour.addEventListener("click", () => {
   
   mobileMenuRef.classList.toggle("menu-container-mobile--is-open");
 });
+
 })();
 
  // Scroll to anchors site-nav
@@ -174,3 +178,6 @@ mobileBtnFour.addEventListener("click", () => {
     document.body.classList.toggle("modal-open");
   }
 }());
+
+ })();
+
