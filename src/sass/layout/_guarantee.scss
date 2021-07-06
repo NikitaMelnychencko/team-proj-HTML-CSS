@@ -26,11 +26,11 @@
   color: $secondary-text-color;
 
   &:first-child {
-    height: 75px;
+    min-height: 75px;
   }
 
   & + & {
-    height: 55px;
+    min-height: 55px;
   }
 
   &::before {
@@ -89,14 +89,14 @@
   }
 
   .guarant__item {
-    height: auto;
+    min-height: auto;
 
     &:first-child {
-      height: auto;
+      min-height: auto;
     }
 
     & + & {
-      height: auto;
+      min-height: auto;
     }
 
     &::before {
