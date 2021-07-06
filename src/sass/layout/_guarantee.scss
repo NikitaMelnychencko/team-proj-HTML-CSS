@@ -22,10 +22,17 @@
   position: relative;
   letter-spacing: normal;
 
-  height: 75px;
   margin-bottom: 23px;
 
   color: $secondary-text-color;
+
+  &:first-child {
+    height: 75px;
+  }
+
+  & + & {
+    height: 55px;
+  }
 
   &::before {
     display: block;
@@ -42,10 +49,10 @@
   &:not(:last-child)::after {
     display: block;
     content: '';
-    height: 68px;
 
     position: absolute;
     left: -20.33px;
+    bottom: -18px;
 
     border-left-width: 1px;
     border-left-style: dashed;
@@ -53,11 +60,11 @@
   }
 
   &:first-child::after {
-    bottom: -15px;
+    height: 68px;
   }
 
   & + &::after {
-    bottom: -20px;
+    height: 48px;
   }
 }
 
@@ -80,6 +87,14 @@
 
   .guarant__item {
     height: auto;
+
+    &:first-child {
+      height: auto;
+    }
+
+    & + & {
+      height: auto;
+    }
 
     &::before {
       left: -24.33px;
@@ -127,7 +142,7 @@
       height: 40px;
 
       left: -30px;
-      bottom: -20px;
+      bottom: -17px;
     }
   }
 }
