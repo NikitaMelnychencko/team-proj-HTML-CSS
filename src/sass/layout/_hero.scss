@@ -40,7 +40,7 @@
             height: 618px;
 
          @media screen and (min-width:$mobile-general){
-            height: 556px;
+            height: 618px;
            
         }
 
@@ -58,10 +58,6 @@
             align-items: center;
             
         }
-
-
-
-   
     }
 }
 
@@ -204,7 +200,7 @@
         &--transparent{  
             animation: fadeInLeftBig  1500ms cubic-bezier(0.4, 0, 0.2, 1);
                 @media screen and (min-width:$desktop-up){
-                // max-width:unset;
+                max-width:unset;
             }
         }
 
