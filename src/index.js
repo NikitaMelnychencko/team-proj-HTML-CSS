@@ -8,8 +8,19 @@ const mobileBtnOne = document.querySelector("[data-menu-one]");
 const mobileBtnTwo = document.querySelector("[data-menu-two]");
 const mobileBtnTree = document.querySelector("[data-menu-tree]"); 
 const mobileBtnFour = document.querySelector("[data-menu-four]");
+const mobileBtnClose = document.querySelector("[data-menu-close]");
 
+mobileBtnClose.addEventListener("click", () => {
+  const expanded =
+    menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+  
+  menuBtnRef.classList.toggle("menu-button--is-open");
+  menuBtnRef.setAttribute("aria-expanded", !expanded);
+  document.body.classList.toggle("modal-open");
 
+  mobileMenuRef.classList.toggle("menu-container-mobile--is-open");
+    
+});
 menuBtnRef.addEventListener("click", () => {
   const expanded =
     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
@@ -147,4 +158,19 @@ mobileBtnFour.addEventListener("click", () => {
         });
     };
     scrollTo();
+//Madal 
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open-backfrop");
+    refs.modal.classList.toggle('backdrop--is-hidden');
+    document.body.classList.toggle("modal-open");
+  }
 }());
