@@ -7,15 +7,14 @@ $(document).ready(function(){
 });
  $('.slider-for').slick({
   slidesToShow: 1,
-     slidesToScroll: 1,
-            autoplay: true,
-      autoplaySpeed: 7000,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 7000,
     asNavFor: '.slider-nav',
-    //  adaptiveHeight: true,
-     fade: false,
-     arrows: true,
-              initialSlide: 5,
-     appendArrows: $('.review-slide'),
+    fade: false,
+    arrows: true,
+    initialSlide: 5,
+    appendArrows: $('.review-slide'),
                responsive: [
         {
             breakpoint: 0,
@@ -40,14 +39,13 @@ $(document).ready(function(){
 $('.slider-nav').slick({
   slidesToShow: 7,
     slidesToScroll: 1,
-              autoplay: true,
-      autoplaySpeed: 30,
-           initialSlide: 5,
+    autoplay: true,
+    autoplaySpeed: 30,
+    initialSlide: 5,
     asNavFor: '.slider-for',
     variableWidth: true,
     centerMode: false,
     focusOnSelect: true,
-
     swipeToSlide: true,
     arrows: false,
     responsive: [
