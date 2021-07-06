@@ -1,31 +1,13 @@
-.list__counter {
-  counter-reset: problems__item;
-
-  &--second {
-    counter-reset: benefits-section__list-item;
-  }
+.counter__list {
+  counter-reset: counter__item;
 }
 
-.item__counter {
+.counter__item {
   &::before {
-    counter-increment: problems__item;
+    counter-increment: counter__item;
     display: block;
-    content: '— 0' counter(problems__item);
-
-    margin-bottom: 5px;
+    content: '— 0' counter(counter__item);
 
     color: $accent-color;
-  }
-
-  &--second {
-    &::before {
-      counter-increment: benefits-section__list-item;
-      display: block;
-      content: '— 0' counter(benefits-section__list-item);
-
-      margin-bottom: 10px;
-
-      color: $accent-color;
-    }
   }
 }
