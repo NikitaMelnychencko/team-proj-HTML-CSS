@@ -44,6 +44,7 @@
 }
 
 .how-we-do__name {
+  margin-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -65,6 +66,10 @@
 }
 
 .how-we-do__description {
+  position: relative;
+
+  padding-top: 20px;
+
   text-align: center;
 
   font-size: 12px;
@@ -72,40 +77,39 @@
 
   color: $primary-text-color;
 
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 20px;
+    height: 2px;
+
+    content: '';
+
+    background-color: $accent-color;
+
+    transition: background-color $time-cubic;
+
+    .how-we-do__link:hover &,
+    .how-we-do__link:focus & {
+      background-color: $third-text-color;
+    }
+  }
+
   transition: color $time-cubic;
 
   .how-we-do__link:hover &,
   .how-we-do__link:focus & {
     color: $third-text-color;
   }
-
-  &::before {
-    display: flex;
-    justify-content: center;
-
-    align-content: flex-start;
-    content: '—';
-
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.65;
-    letter-spacing: 0.08em;
-
-    color: $accent-color;
-
-    transition: color $time-cubic;
-
-    .how-we-do__link:hover &,
-    .how-we-do__link:focus & {
-      color: $third-text-color;
-    }
-  }
 }
 
 @media screen and (max-width: $mobile-only) {
   .how-we-do__link {
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 18px 0;
   }
 
   .how-we-do__item:not(:last-child) {
