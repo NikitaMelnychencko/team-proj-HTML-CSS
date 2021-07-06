@@ -68,9 +68,12 @@
     color: $third-text-color;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $tablet-general) {
+    @media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
       font-size: 14px;
-      line-height: 17px;
+      line-height: 1.21;
+      width: 455px;
+      margin-right: auto;
+      margin-left: auto;
     }
     @media screen and (min-width: $desktop-up) {
       font-size: 30px;
@@ -92,6 +95,8 @@
   &__input {
     width: 280px;
     height: 48px;
+    padding: 15px 30px;
+
     font-family: Montserrat;
     font-weight: 600;
     font-size: 14px;
@@ -99,8 +104,8 @@
     letter-spacing: 0.08em;
     background-color: transparent;
     border: 1px solid white;
+    color: $third-text-color;
     &::placeholder {
-      padding-left: 28px;
       color: $third-text-color;
     }
 
@@ -110,6 +115,8 @@
     @media screen and (min-width: $desktop-up) {
       width: 478px;
       height: 70px;
+      padding: 23px 40px;
+
       font-size: 20px;
       line-height: 1.2;
       margin-bottom: 30px;
