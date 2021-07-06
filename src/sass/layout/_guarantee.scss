@@ -20,7 +20,6 @@
 
 .guarant__item {
   position: relative;
-  letter-spacing: normal;
 
   margin-bottom: 23px;
 
@@ -66,6 +65,10 @@
   & + &::after {
     height: 48px;
   }
+}
+
+.guarant__text {
+  letter-spacing: normal;
 }
 
 .guarant__text-select {
@@ -125,8 +128,6 @@
   }
 
   .guarant__item {
-    font-size: 20px;
-    line-height: 1.4;
     margin-bottom: 0;
 
     &::before {
@@ -144,5 +145,10 @@
       left: -30px;
       bottom: -17px;
     }
+  }
+
+  .guarant__text {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
