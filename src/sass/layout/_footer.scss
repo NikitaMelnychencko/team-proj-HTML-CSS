@@ -1,47 +1,99 @@
 .footer {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width: $tablet-general) {
-      flex-direction: row;
-    }
+  @media screen and (max-width: $mobile-only) {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-background-color 76%,
+      $secondary-background-color 24%
+    );
   }
-  .logo-container {
-    margin-bottom: 20px;
-  }
-  .footer__right-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    @media screen and (min-width: $tablet-general) {
-      flex-direction: row;
-      margin-left: auto;
-    }
-    @media screen and (min-width: $desktop-up) {
-      margin-left: 292px;
-    }
+  @media screen and (min-width: $tablet-general) {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-background-color 65%,
+      $secondary-background-color 35%
+    );
   }
-  &__tel-link {
-    position: relative;
-    display: flex;
-    justify-content: baseline;
-    color: $primary-title-text-color;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.08em;
-    margin-bottom: 30px;
-    margin-right: 45px;
 
-    @media screen and (min-width: $tablet-general) {
-      font-size: 20px;
-      line-height: 1.2;
-    }
+  @media screen and (min-width: $desktop-up) {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-background-color 69%,
+      $secondary-background-color 31%
+    );
   }
 }
+
+//footer content with logo and contacts
+.footer__content {
+  display: flex;
+
+  @media screen and (max-width: $mobile-only) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    flex-direction: row;
+    padding: 40px 0;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    padding: 52px 0;
+  }
+}
+
+//footer-logo
+.logo-container {
+  @media screen and (max-width: $mobile-only) {
+    margin-bottom: 20px;
+  }
+}
+
+//Container with tel and instagram
+.footer__right-contact {
+  display: flex;
+
+  @media screen and (max-width: $mobile-only) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop-up) {
+    margin-left: 290px;
+  }
+}
+
+// tel-link
+.footer__tel-link {
+  display: flex;
+  align-items: center;
+  color: $primary-title-text-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media screen and (max-width: $mobile-only) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    font-size: 20px;
+    margin-right: 50px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    font-size: 30px;
+    margin-right: 40px;
+  }
+}
+
 .icon-tel {
   margin-right: 10px;
   width: 20px;
@@ -52,13 +104,34 @@
     height: 25px;
   }
   @media screen and (min-width: $desktop-up) {
-    margin-right: 20px;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
   }
 }
+
+//instagram
+.instagram {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/svg/instagram.svg');
+
+  @media screen and (min-width: $tablet-general) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 40px;
+      border: 1px solid $primary-text-color;
+      left: -25px;
+    }
+  }
+}
+
+//Copyright
 .rights {
-  display: block;
-  background-color: $secondary-background-color;
-  padding-left: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-weight: 500;
@@ -66,30 +139,7 @@
   line-height: 2;
   color: $primary-text-color;
 
-  @media screen and (min-width: $tablet-general) {
-    padding-left: 40px;
-  }
-  @media screen and (min-width: $desktop-up) {
-    padding-left: 26px;
-  }
-}
-.instagram {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-image: url('../images/svg/instagram.svg');
-  margin-bottom: 30px;
-
-  @media screen and (min-width: $tablet-general) {
-    &::after {
-      position: absolute;
-      content: '';
-      width: 40px;
-      height: 0;
-      border: 1px solid $primary-text-color;
-      transform: rotate(90deg);
-      bottom: 50%;
-      left: -45px;
-    }
+  @media screen and (max-width: $mobile-only) {
+    text-align: center;
   }
 }
