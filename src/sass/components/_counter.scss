@@ -1,5 +1,9 @@
 .list__counter {
   counter-reset: problems__item;
+
+  &--second {
+    counter-reset: benefits-section__list-item;
+  }
 }
 
 .item__counter {
@@ -11,5 +15,17 @@
     margin-bottom: 5px;
 
     color: $accent-color;
+  }
+
+  &--second {
+    &::before {
+      counter-increment: benefits-section__list-item;
+      display: block;
+      content: '— 0' counter(benefits-section__list-item);
+
+      margin-bottom: 10px;
+
+      color: $accent-color;
+    }
   }
 }
