@@ -102,3 +102,24 @@
 .menu-button.menu-button--is-open .menu-button__menu {
   display: none;
 }
+.contacts__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  background: $accent-color;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  color: $third-text-color;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 0;
+  @media screen and (min-width: $desktop-up) {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
