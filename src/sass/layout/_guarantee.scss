@@ -11,22 +11,27 @@
 }
 
 .guarant__back {
-  width: 100%;
   background-color: $third-background-color;
 }
 
 .guarant__list {
-  padding: 50px 20px 51px 20px;
+  padding: 50px 0 51px 35px;
 }
 
 .guarant__item {
   position: relative;
-  letter-spacing: normal;
 
-  height: 75px;
   margin-bottom: 23px;
 
   color: $secondary-text-color;
+
+  &:first-child {
+    height: 75px;
+  }
+
+  & + & {
+    height: 55px;
+  }
 
   &::before {
     display: block;
@@ -43,10 +48,10 @@
   &:not(:last-child)::after {
     display: block;
     content: '';
-    height: 68px;
 
     position: absolute;
     left: -20.33px;
+    bottom: -18px;
 
     border-left-width: 1px;
     border-left-style: dashed;
@@ -54,12 +59,16 @@
   }
 
   &:first-child::after {
-    bottom: -15px;
+    height: 68px;
   }
 
   & + &::after {
-    bottom: -20px;
+    height: 48px;
   }
+}
+
+.guarant__text {
+  letter-spacing: normal;
 }
 
 .guarant__text-select {
@@ -68,15 +77,27 @@
 
 @media (min-width: $tablet-general) {
   .guarant__back {
-    width: 688px;
+    background-color: transparent;
+
+    &--list {
+      background-color: $third-background-color;
+    }
   }
 
   .guarant__list {
-    padding: 30px 50px 30px 80px;
+    padding: 30px 50px 30px 118px;
   }
 
   .guarant__item {
     height: auto;
+
+    &:first-child {
+      height: auto;
+    }
+
+    & + & {
+      height: auto;
+    }
 
     &::before {
       left: -24.33px;
@@ -96,10 +117,6 @@
 }
 
 @media (min-width: $desktop-up) {
-  .guarant__back {
-    width: 1314px;
-  }
-
   .guarant__title {
     font-size: 46px;
 
@@ -107,12 +124,10 @@
   }
 
   .guarant__list {
-    padding: 50px 112px 45px 112px;
+    padding: 50px 112px 45px 164px;
   }
 
   .guarant__item {
-    font-size: 20px;
-    line-height: 1.4;
     margin-bottom: 0;
 
     &::before {
@@ -128,7 +143,12 @@
       height: 40px;
 
       left: -30px;
-      bottom: -20px;
+      bottom: -17px;
     }
+  }
+
+  .guarant__text {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
