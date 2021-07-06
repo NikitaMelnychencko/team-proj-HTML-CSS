@@ -1,14 +1,12 @@
-.list__counter {
-  counter-reset: list__counter;
+.counter__list {
+  counter-reset: counter__item;
 }
 
-.item__counter {
+.counter__item {
   &::before {
-    counter-increment: item__counter;
+    counter-increment: counter__item;
     display: block;
-    content: '— 0' counter(item__counter);
-
-    margin-bottom: 5px;
+    content: '— 0' counter(counter__item);
 
     color: $accent-color;
   }
