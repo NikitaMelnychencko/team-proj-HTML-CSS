@@ -175,7 +175,7 @@ mobileBtnFour.addEventListener("click", () => {
   function toggleModal() {
     document.body.classList.toggle("modal-open-backfrop");
     refs.modal.classList.toggle('backdrop--is-hidden');
-    document.body.classList.toggle("modal-open");
+    document.body.classList.toggle("modal-open-backdrop");
   }
 }());
 
