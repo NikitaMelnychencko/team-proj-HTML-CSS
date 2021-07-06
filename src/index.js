@@ -162,8 +162,9 @@ mobileBtnFour.addEventListener("click", () => {
         });
     };
     scrollTo();
+}());
 //Madal 
-  const refs = {
+const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
@@ -177,7 +178,21 @@ mobileBtnFour.addEventListener("click", () => {
     refs.modal.classList.toggle('backdrop--is-hidden');
     document.body.classList.toggle("modal-open-backdrop");
   }
-}());
+
+  const ref = {
+    openModalBtn: document.querySelector('[data-modal-mobile-open]'),
+    closeModalBtn: document.querySelector('[data-modal-mobile-close]'),
+    modal: document.querySelector('[data-modal-mobile]'),
+  };
+
+  ref.openModalBtn.addEventListener('click', toggleModal);
+  ref.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    document.body.classList.toggle("modal-open-backfrop");
+    ref.modal.classList.toggle('backdrop--is-hidden');
+    document.body.classList.toggle("modal-open-backdrop");
+  }
 
 
 
