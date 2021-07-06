@@ -102,6 +102,59 @@
 .menu-button.menu-button--is-open .menu-button__menu {
   display: none;
 }
+
+//backdrop-buttun
+.buttun--close {
+  @extend %buttun;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 30px;
+  width: 30px;
+  padding: 0;
+
+  border-radius: 50%;
+  background: $primary-background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $primary-logo-color;
+
+  z-index: 20;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet-general) {
+    right: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.buttun__svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.buttun--submit {
+  @extend %buttun;
+  display: inline-block;
+  padding: 10px 55px 10px 55px;
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $primary-background-color;
+  background: $secondary-accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .contacts__button {
   display: block;
   margin-left: auto;

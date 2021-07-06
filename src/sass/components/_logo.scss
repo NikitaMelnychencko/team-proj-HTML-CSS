@@ -57,3 +57,8 @@
 .modal-open .bottom-part__riht {
   color: $secondary-title-text-color;
 }
+
+.modal-open .logo-container,
+.modal-open-backdrop .logo-container {
+  display: none;
+}
