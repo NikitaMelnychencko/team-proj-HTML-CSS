@@ -11,12 +11,11 @@
 }
 
 .guarant__back {
-  width: 100%;
   background-color: $third-background-color;
 }
 
 .guarant__list {
-  padding: 50px 20px 51px 20px;
+  padding: 50px 0 51px 35px;
 }
 
 .guarant__item {
@@ -68,11 +67,15 @@
 
 @media (min-width: $tablet-general) {
   .guarant__back {
-    width: 688px;
+    background-color: transparent;
+
+    &--list {
+      background-color: $third-background-color;
+    }
   }
 
   .guarant__list {
-    padding: 30px 50px 30px 80px;
+    padding: 30px 50px 30px 118px;
   }
 
   .guarant__item {
@@ -96,10 +99,6 @@
 }
 
 @media (min-width: $desktop-up) {
-  .guarant__back {
-    width: 1314px;
-  }
-
   .guarant__title {
     font-size: 46px;
 
@@ -107,7 +106,7 @@
   }
 
   .guarant__list {
-    padding: 50px 112px 45px 112px;
+    padding: 50px 112px 45px 164px;
   }
 
   .guarant__item {
