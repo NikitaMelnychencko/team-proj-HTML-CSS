@@ -1,0 +1,104 @@
+%buttun {
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.25;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.buttun-primary {
+  @extend %buttun;
+  border: 2px solid #ff6b09;
+  padding: 17px 36px;
+  background-color: transparent;
+  color: $selection-title-text-color;
+
+  &:focus {
+    outline: 1px solid $secondary-accent-color;
+  }
+
+  &--tablet-up {
+    display: none;
+    @media screen and (min-width: $tablet-general) {
+      display: block;
+      margin-left: auto;
+      margin-right: 60px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      letter-spacing: 0.14em;
+      padding: 15px 5px;
+      min-width: 260px;
+    }
+    @media screen and (min-width: $desktop-up) {
+      margin-right: 0;
+      padding: 27px 24px 26px 24px;
+      min-width: 336px;
+    }
+  }
+
+  &--mobile {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    @media screen and (min-width: $tablet-general) {
+      display: none;
+    }
+  }
+}
+
+.menu-button {
+  @extend %buttun;
+  position: absolute;
+  transform: translate(0, +50%);
+  top: 37px;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 14px;
+  width: 20px;
+
+  background: transparent;
+  color: #000000;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 8;
+  &--is-open {
+    height: 15px;
+    width: 15px;
+    color: #ffffff;
+  }
+  @media screen and (min-width: $tablet-general) {
+    top: 53px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    display: none;
+  }
+}
+
+.menu-button__svg {
+  height: 14px;
+}
+.menu-button__cross,
+.menu-button__menu {
+  stroke: currentColor;
+  fill: currentColor;
+}
+.menu-button .menu-button__cross {
+  display: none;
+}
+.menu-button.menu-button--is-open .menu-button__cross {
+  display: block;
+}
+.menu-button.menu-button--is-open .menu-button__menu {
+  display: none;
+}
