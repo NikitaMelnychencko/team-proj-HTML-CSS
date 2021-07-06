@@ -8,8 +8,8 @@
 }
 
 .problems__title {
-  margin-bottom: 24px;
-  padding-top: 27px;
+  margin-bottom: 25px;
+  padding-top: 25px;
 
   font-weight: 800;
   font-size: 24px;
@@ -28,28 +28,32 @@
 }
 
 .problems__board {
-  padding: 20px 22px 4px 30px;
+  padding: 19px 30px 19px 30px;
 
   background-color: $primary-background-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
 .problems__item {
-  font-weight: bold;
+  &::before {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+  }
+}
+
+.problems__description {
+  font-weight: 700;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.43;
 
   color: $primary-title-text-color;
-
-  &::before {
-    line-height: 1.2;
-  }
 }
 
 @media screen and (max-width: $mobile-only) {
   .problems__item {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -64,19 +68,20 @@
   }
 
   .problems__title {
+    margin-bottom: 36px;
     padding-top: 60px;
   }
 
   .problems__board {
-    padding: 30px 118px 10px 96px;
+    padding: 26px 96px 30px 96px;
   }
 
   .problems__list {
-    @include grid-list(42px, 16px);
+    @include grid-list(42px, 20px);
   }
 
   .problems__item {
-    @include grid-item(2, 42px, 16px);
+    @include grid-item(2, 42px, 20px);
   }
 }
 
@@ -85,35 +90,40 @@
     background-image: url('../../src/images/svg/problems-bg.svg'),
       linear-gradient(
         to bottom,
-        $secondary-background-color 548px,
-        $primary-background-color 548px
+        $secondary-background-color 560px,
+        $primary-background-color 560px
       );
-    background-position: top 103px right, center;
+    background-position: top 88px right, center;
   }
 
   .problems__title {
-    margin-bottom: 63px;
-    padding-top: 115px;
+    margin-bottom: 70px;
+    padding-top: 100px;
 
     font-size: 46px;
   }
 
   .problems__board {
-    padding: 68px 112px 60px 114px;
+    padding: 70px 114px 62px 114px;
   }
 
   .problems__list {
-    @include grid-list(40px, 30px);
+    @include grid-list(40px, 32px);
   }
 
   .problems__item {
-    @include grid-item(3, 40px, 30px);
-
-    font-size: 20px;
-    line-height: 1.4;
+    @include grid-item(3, 40px, 32px);
 
     &::before {
+      margin-bottom: 10px;
+
+      font-size: 20px;
       line-height: 1.65;
     }
+  }
+
+  .problems__description {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
