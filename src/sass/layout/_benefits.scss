@@ -27,6 +27,10 @@
   background-color: $primary-background-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
+  @media screen and (max-width: 767px) {
+    padding: 20px 15px 20px 30px;
+  }
+
   @media screen and (min-width: 768px) {
     position: absolute;
   }
@@ -76,13 +80,6 @@
 
 //section-list
 .benefits-section__list {
-  @media screen and (max-width: 767px) {
-    width: 280px;
-    padding: 20px 15px 20px 30px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     @include grid-list(20px, 40px);
   }
@@ -95,6 +92,7 @@
 //list-item
 .benefits-section__list-item {
   @media screen and (max-width: 767px) {
+    min-height: 57px;
     &:not(:last-child) {
       margin-bottom: 36px;
     }
