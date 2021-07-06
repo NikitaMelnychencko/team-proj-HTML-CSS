@@ -99,6 +99,10 @@
 
   color: $primary-title-text-color;
 
+  &::before {
+    margin-bottom: 10px;
+  }
+
   @media screen and (max-width: 767px) {
     min-height: 60px;
     &:not(:last-child) {
