@@ -30,6 +30,7 @@
 .problems__board {
   background-color: $primary-background-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  padding: 19px 30px 19px 30px;
 }
 
 .problems__item {
@@ -51,13 +52,6 @@
 }
 
 @media screen and (max-width: $mobile-only) {
-  .problems__list {
-    width: 280px;
-    padding: 19px 30px 19px 30px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .problems__item {
     &:not(:last-child) {
       margin-bottom: 15px;
