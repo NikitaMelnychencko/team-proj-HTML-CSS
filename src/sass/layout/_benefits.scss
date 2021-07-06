@@ -27,10 +27,6 @@
   background-color: $primary-background-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
-  @media screen and (max-width: 767px) {
-    padding: 20px 15px 20px 30px;
-  }
-
   @media screen and (min-width: 768px) {
     position: absolute;
   }
@@ -80,6 +76,13 @@
 
 //section-list
 .benefits-section__list {
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    padding: 20px 15px 20px 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     @include grid-list(20px, 40px);
   }
@@ -91,21 +94,7 @@
 
 //list-item
 .benefits-section__list-item {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-
-  letter-spacing: 0.08em;
-
-  color: $primary-title-text-color;
-
-  &::before {
-    margin-bottom: 10px;
-    line-height: 1.65;
-  }
-
   @media screen and (max-width: 767px) {
-    min-height: 60px;
     &:not(:last-child) {
       margin-bottom: 36px;
     }
@@ -116,7 +105,32 @@
   }
 
   @media screen and (min-width: 1366px) {
-    font-size: 20px;
     @include grid-item(3, 40px, 32px);
+  }
+
+  &::before {
+    margin-bottom: 10px;
+    line-height: 1.65;
+    font-weight: 700;
+    font-size: 14px;
+
+    @media screen and (min-width: 1366px) {
+      font-size: 20px;
+    }
+  }
+}
+
+//list text
+.benefits-section__list-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+
+  color: $primary-title-text-color;
+
+  @media screen and (min-width: 1366px) {
+    font-size: 20px;
   }
 }
