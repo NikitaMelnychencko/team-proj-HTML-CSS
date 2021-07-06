@@ -9,7 +9,12 @@
   align-items: center;
   min-height: 106px;
 
+
+
   @media screen and (min-width: $tablet-general) {
+    padding: 41px 0 70px 0;
+  }
+  @media screen and (min-width: $desktop-up) {
     padding: 41px 0 100px 0;
   }
 }
