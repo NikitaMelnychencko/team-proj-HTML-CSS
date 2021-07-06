@@ -136,9 +136,7 @@
     color: $accent-color;
   }
 }
-.buttun-text--hide {
-  @extend %hide;
-}
+
 .buttun__svg {
   width: 18px;
   height: 18px;
@@ -155,7 +153,7 @@
   color: $primary-background-color;
   background: $secondary-accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+}
 .contacts__button {
   display: block;
   margin-left: auto;
@@ -176,5 +174,4 @@
     font-size: 14px;
     line-height: 1.21;
   }
-
 }
