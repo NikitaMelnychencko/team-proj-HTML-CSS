@@ -1,31 +1,32 @@
 .hero{
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $third-background-color;
-    background-image: url("../images/img/mobile/Vector-mobile-1.png");
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $third-background-color;
+        background-image: url("../images/img/tablet/Vector-tablet-1.png");
+        box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url("../images/img/mobile/Vector-mobile-1@2x.png");
+        background-image: url("../images/img/tablet/Vector-tablet-1@2x.png");
         }
 
 
-        @media screen and (min-width:$mobile-general){
-        background-image: url('../images/img/tablet/Vector-tablet-1.png');
+    //     @media screen and (min-width:$mobile-general){
+    //     background-image: url('../images/img/tablet/Vector-tablet-1.png');
   
 
-    @media (min-device-pixel-ratio: 2) and (min-width:$mobile-general),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/img/tablet/Vector-tablet-1@2x.png');
-        }
-    }
+    // @media (min-device-pixel-ratio: 2) and (min-width:$mobile-general),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background-image: url('../images/img/tablet/Vector-tablet-1@2x.png');
+    //     }
+    // }
 
       @media screen and (min-width:$tablet-general){
         background-image: url('../images/img/desktop/Vector-desktop-1.png');
+        padding-bottom: 0;
   
 
     @media (min-device-pixel-ratio: 2) and (min-width:$tablet-general),
@@ -36,13 +37,19 @@
     }
      
         &__section{
-        height: 556px;
+        height: 618px;
+
+         @media screen and (min-width:$mobile-general){
+            height: 556px;
+           
+        }
+
    
         @media screen and (min-width:$tablet-general){
             display: flex;
             justify-content: center;
             align-items: center;
-            
+           
         }
 
         @media screen and (min-width:$desktop-up){
@@ -64,10 +71,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 55px;
 
     @media screen and (min-width:$tablet-general){
         align-items: flex-start;
         padding-bottom: 137px;
+         margin-bottom: 0;
     }
 
     @media screen and (min-width:$desktop-up){
@@ -115,7 +124,6 @@
         color: $primary-text-color;
 
      @media screen and (min-width:$desktop-up){
-        // align-self: center;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.64;
@@ -158,8 +166,8 @@
     width: 100%;
     padding: 14px 0;
     font-weight: 700;
-    margin-bottom: 55px;
     margin-top: 50px;
+    margin-bottom: 55px;
     font-size: 12px;
     line-height: 1.25;
     align-items: center;
@@ -197,7 +205,7 @@
         &--transparent{  
             animation: fadeInLeftBig  1500ms cubic-bezier(0.4, 0, 0.2, 1);
                 @media screen and (min-width:$desktop-up){
-                max-width:unset;
+                // max-width:unset;
             }
         }
 
