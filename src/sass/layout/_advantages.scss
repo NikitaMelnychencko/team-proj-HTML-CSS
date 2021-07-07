@@ -95,12 +95,17 @@
   display: block;
   width: 60px;
   height: 60px;
+    @media screen and (min-width: $desktop-up) {
+    display: none;
+  }
 }
+
 
 .advantages__icon-desk {
   display: none;
   width: 120px;
   height: 102px;
+  
   @media screen and (min-width: $desktop-up) {
     display: block;
   }
