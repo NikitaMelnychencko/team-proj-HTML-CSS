@@ -1,96 +1,97 @@
 .advantages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
     background-color: $third-background-color;
-  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-}
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
+}
 .advantages__list {
-  display: block;
+
   @media screen and (min-width: $tablet-general) {
     display: flex;
-    flex-direction: inherit;
-    // justify-content: space-between;
-    align-items: center;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    display: flex;
-    flex-direction: inherit;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
   }
 }
 .advantages__list-item {
-  display: flex;
-  margin-bottom: 26px;
-  align-items: center;
-  justify-content: center;
-  @media screen and (min-width: $tablet-general) {
-    margin-bottom: 0;
-    // width: 216px;
-  }
-}
-@media screen and (min-width: $tablet-general) and (max-width: $tablet-only) {
-  .advantages__list-item + .advantages__list-item {
-    margin-left: 21px;
-  }
+    display: flex;
+    align-items: center;
+    height: 69px;
+    padding-right: 0;
+    
+    @media screen and (max-width: $tablet-general) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      &:not(:first-child) {
+        padding-right: 20%;
+      }
+    }
+    @media screen and (min-width: 400px) and (max-width: $mobile-only) {
+        width: 360px;
+        padding-right: 0;
+
+        &:not(:first-child) {
+          padding-right: 0;
+        }
+      }
+      @media screen and (min-width: $tablet-general){
+        min-width: 235px;
+
+        &:not(:first-child) {
+          padding-right: 7%;
+        }
+      }
+      @media screen and (min-width: $desktop-up) {
+        font-size: 20px;
+        max-width: 370px;
+        min-height: 102px;
+
+        &:not(:first-child) {
+          padding-right: 3%;
+        }
+        }
 }
 
 .advanrages__text {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.65;
-  align-items: center;
-  color: $primary-title-text-color;
-  margin-left: 10px;
-
-  @media screen and (min-width: $tablet-general) {
-    margin-left: 15px;
-  }
-
-  @media screen and (min-width: $desktop-up) {
-    width: inherit;
-    margin-left: -20px;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 14px;
     line-height: 1.65;
-    width: 366px;
-  }
+    align-items: center;
+    color: $primary-title-text-color;
 }
-.advantages__list-item + .advantages__list-item .advanrages__text {
-  width: 139px;
-  @media screen and (min-width: $desktop-up) {
-    width: 366px;
-  }
+// person
+.advantages__list-item::before{
+    content: '';
+    min-width: 60px;
+    min-height: 60px;
+    margin-right: 10px;
+
+    background-image: url(../images/svg/advantages/icon-person.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $desktop-up){
+      min-width: 100px;
+      min-height: 102px;
+      margin-right: -18px;
+      background-image: url(../images/svg/advantages/icon-person-desk.svg);
+    }
 }
-.advantages__list-item-icon {
-  width: 60px;
-  height: 60px;
+// learning
+.advantages__list-item:nth-child(2)::before {
+  background-image: url(../images/svg/advantages/icon-mobile-learning-bord.svg);
 
   @media screen and (min-width: $desktop-up) {
-    width: 120px;
-    height: 102px;
+    background-image: url(../images/svg/advantages/icon-mobile-learning-bord-desk.svg);
   }
 }
+// money
+.advantages__list-item:nth-child(3)::before {
+  background-image: url(../images/svg/advantages/icon-money.svg);
 
-.advantages__icon {
-  display: block;
-  width: 60px;
-  height: 60px;
-    @media screen and (min-width: $desktop-up) {
-    display: none;
-  }
-}
-
-
-.advantages__icon-desk {
-  display: none;
-  width: 120px;
-  height: 102px;
-  
   @media screen and (min-width: $desktop-up) {
-    display: block;
+    background-image: url(../images/svg/advantages/icon-money-desk.svg);
   }
 }
