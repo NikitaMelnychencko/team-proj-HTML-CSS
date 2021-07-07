@@ -114,6 +114,7 @@
   fill: $secondary-background-color;
   transform: translate(0px, -35px);
   margin: 20px;
+  cursor: pointer;
 }
 
 .review-slide__nav-slider-box {
@@ -327,6 +328,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
   @media screen and (min-width: $tablet-general) {
       margin: 0px 15px;
       max-width: 1400px;
