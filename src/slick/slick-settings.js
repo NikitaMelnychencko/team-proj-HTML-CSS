@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('ready', function() {
   $('.slider').slick({
       dots: false,
       infinite: true,

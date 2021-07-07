@@ -182,13 +182,25 @@
   align-items: center;
   position: absolute;
   width: 100vw;
-  height: 150%;
+  height: 450px;
   overflow: hidden;
   top: 0;
   right: 0;
 
+
+  @media screen and (min-width: $mobile-first) {
+    height: 600px;
+  }
+
+  @media screen and (min-width: $tablet-general) {
+    height: 330px;
+  }
+
+
+
   @media screen and (min-width: $desktop-up) {
     top: -50px;
+    height: 750px;
   }
 
   &--transparent {
