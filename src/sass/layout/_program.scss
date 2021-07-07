@@ -20,7 +20,7 @@
       content: '';
       border-right: 1px solid #ffffff;
       position: absolute;
-      height: 99vw;
+      height: 99.9vw;
       transform: rotate(-90deg);
       transform-origin: top;
       top: 278px;
@@ -97,10 +97,15 @@
 .program-section__semester-list {
   position: relative;
 
+  @media screen and (max-width: 479px) {
+    margin-left: 27%;
+  }
+
   @media screen and (max-width: 767px) {
     padding-left: 26px;
     width: 202px;
-    margin-left: 76px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1365px) {

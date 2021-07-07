@@ -121,12 +121,8 @@ textarea {
 .form__checkbox-link {
   font-size: 10px;
   line-height: 1.16;
-  @media screen and (min-width: $mobile-general) {
-    font-size: 12px;
-  }
   @media screen and (min-width: $desktop-up) {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
   }
 }
 .form__text {

@@ -28,17 +28,18 @@
 }
 
 .problems__board {
-  padding: 19px 30px 19px 30px;
-
   background-color: $primary-background-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  padding: 19px 30px 19px 30px;
 }
 
 .problems__item {
   &::before {
+    margin-bottom: 5px;
+
     font-size: 14px;
     font-weight: 700;
-    line-height: 1.71;
+    line-height: 1.72;
   }
 }
 

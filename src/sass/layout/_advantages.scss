@@ -1,8 +1,13 @@
 .advantages {
     background-color: $third-background-color;
+
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 
 }
+
+
+
+
 .advantages__list {
 
   @media screen and (min-width: $tablet-general) {
@@ -14,6 +19,7 @@
   }
 }
 .advantages__list-item {
+
     display: flex;
     align-items: center;
     height: 69px;
@@ -31,6 +37,7 @@
     @media screen and (min-width: 400px) and (max-width: $mobile-only) {
         width: 360px;
         padding-right: 0;
+
 
         &:not(:first-child) {
           padding-right: 0;
