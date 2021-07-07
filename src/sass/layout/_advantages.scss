@@ -23,7 +23,7 @@
     align-items: center;
    
     
-    @media screen and (max-width: $tablet-general) {
+    @media screen and (max-width: $mobile-only) {
       &:not(:last-child) {
         
         margin-bottom: 20px;
