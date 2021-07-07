@@ -10,21 +10,12 @@
   background-position: bottom, left;
   background-position-x: -50px;
   position: relative;
+  
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url('../images/img/tablet/Vector-tablet-1@2x.png');
   }
-
-  //     @media screen and (min-width:$mobile-general){
-  //     background-image: url('../images/img/tablet/Vector-tablet-1.png');
-
-  // @media (min-device-pixel-ratio: 2) and (min-width:$mobile-general),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url('../images/img/tablet/Vector-tablet-1@2x.png');
-  //     }
-  // }
 
   @media screen and (min-width: $tablet-general) {
     background-image: url('../images/img/desktop/Vector-desktop-1.png');
@@ -147,6 +138,7 @@
 }
 
 .button {
+  z-index:100;
   width: 100%;
   padding: 14px 0;
   font-weight: 700;
@@ -161,6 +153,8 @@
   background-color: $selection-title-text-color;
   border: none;
   cursor: pointer;
+  
+  
 
   @media screen and (min-width: $mobile-first) {
     width: 260px;
