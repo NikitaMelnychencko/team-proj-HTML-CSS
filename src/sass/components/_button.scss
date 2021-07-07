@@ -59,7 +59,7 @@
   transform: translate(0, +50%);
   top: 37px;
   right: 0;
-z-index: 1500;
+  z-index: 2000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,6 +76,7 @@ z-index: 1500;
     height: 15px;
     width: 15px;
     color: #ffffff;
+    z-index: 2000;
   }
   @media screen and (min-width: $tablet-general) {
     top: 53px;
