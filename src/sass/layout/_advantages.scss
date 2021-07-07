@@ -25,6 +25,7 @@
       }
       &:not(:first-child) {
         padding-right: 20%;
+        
       }
     }
     @media screen and (min-width: 400px) and (max-width: $mobile-only) {
@@ -37,9 +38,12 @@
       }
       @media screen and (min-width: $tablet-general){
         min-width: 235px;
+        
 
         &:not(:first-child) {
           padding-right: 7%;
+          margin-bottom: 20px;
+          
         }
       }
       @media screen and (min-width: $desktop-up) {
