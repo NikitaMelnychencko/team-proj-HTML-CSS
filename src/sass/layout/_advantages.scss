@@ -38,11 +38,11 @@
       }
       @media screen and (min-width: $tablet-general){
         min-width: 235px;
-        
+        margin-bottom: 20px;
 
         &:not(:first-child) {
           padding-right: 7%;
-          margin-bottom: 20px;
+          
           
         }
       }
