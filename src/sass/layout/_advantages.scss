@@ -19,33 +19,37 @@
   }
 }
 .advantages__list-item {
-
     display: flex;
     align-items: center;
-    height: 69px;
-    padding-right: 0;
+   
     
     @media screen and (max-width: $tablet-general) {
       &:not(:last-child) {
+        
         margin-bottom: 20px;
+        margin-left: 18%;
       }
       &:not(:first-child) {
-        padding-right: 20%;
+        // padding-right: 20%;
+        margin-left: 18%;
+        margin-right: 9%;
         
       }
     }
     @media screen and (min-width: 400px) and (max-width: $mobile-only) {
-        width: 360px;
+       
         padding-right: 0;
 
 
         &:not(:first-child) {
           padding-right: 0;
+        
         }
       }
       @media screen and (min-width: $tablet-general){
         min-width: 235px;
         margin-bottom: 20px;
+         margin-left: 0;
 
         &:not(:first-child) {
           padding-right: 7%;
@@ -57,9 +61,12 @@
         font-size: 20px;
         max-width: 370px;
         min-height: 102px;
+        &:not(:last-child) {
+          padding-right: 7%;
+        }
 
         &:not(:first-child) {
-          padding-right: 3%;
+          padding-right: 7%;;
         }
         }
 }
@@ -70,7 +77,12 @@
     line-height: 1.65;
     align-items: center;
     color: $primary-title-text-color;
+    // padding-right: 26%;
+
+
 }
+
+
 // person
 .advantages__list-item::before{
     content: '';
