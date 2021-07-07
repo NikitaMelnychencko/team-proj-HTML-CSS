@@ -9,6 +9,9 @@
     ),
     url('../images/img/mobile/page-contacts/contacts-bg.png');
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 55px;
+  padding-bottom: 55px;
+
   @media screen and (min-width: $mobile-general) {
     background-image: linear-gradient(
         rgba(17, 21, 24, 0.4),
@@ -23,21 +26,14 @@
         rgba(17, 21, 24, 0.4)
       ),
       url('../images/img/desktop/page-contacts/contacts-bg.png');
+    padding-bottom: 65px;
+    padding-top: 65px;
   }
   @media screen and (min-width: $desktop-up) {
-    padding-bottom: 0;
-  }
-  &__container {
-    padding-top: 50px;
-    @media screen and (min-width: $tablet-general) {
-      padding-bottom: 20px;
-    }
-    @media screen and (min-width: $desktop-up) {
-      padding-top: 100px;
-    }
+    padding-top: 100px;
+    padding-bottom: 60px;
   }
 
-  
   &__title {
     margin-left: auto;
     margin-right: auto;
@@ -87,15 +83,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-    @media screen and (min-width: $tablet-general) {
-      margin-bottom: 31px;
-    }
   }
 
   &__input {
     width: 280px;
-    height: 48px;
+
     padding: 15px 30px;
 
     font-family: Montserrat;
@@ -106,8 +98,14 @@
     background-color: transparent;
     border: 1px solid white;
     color: $third-text-color;
+
     &::placeholder {
       color: $third-text-color;
+      font-size: 14px;
+
+      @media screen and (min-width: $desktop-up) {
+        font-size: 20px;
+      }
     }
 
     @media screen and (min-width: $tablet-general) {
@@ -115,18 +113,28 @@
     }
     @media screen and (min-width: $desktop-up) {
       width: 478px;
-      height: 70px;
+
       padding: 23px 40px;
 
       font-size: 20px;
       line-height: 1.2;
-      margin-bottom: 30px;
     }
   }
 }
-.contacts__label + .contacts__label {
-  margin-top: 20px;
+.name-label {
+  margin-bottom: 20px;
 }
+
+.tel-label {
+  margin-bottom: 50px;
+  @media screen and (min-width: $tablet-general) {
+    margin-bottom: 31px;
+  }
+  @media screen and (min-width: $desktop-up) {
+    margin-bottom: 80px;
+  }
+}
+
 .accent-words {
   color: $selection-title-text-color;
 }
