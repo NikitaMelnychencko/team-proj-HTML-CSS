@@ -40,7 +40,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 55px;
+  // margin-bottom: 55px;
+  margin-bottom: 250px;
+  z-index: 5;
+
+  @media screen and (min-width: $mobile-general) {
+    margin-bottom: 440px;
+  }
+
   @media screen and (min-width: $tablet-general) {
     align-items: flex-start;
     margin-bottom: 0;
@@ -120,7 +127,7 @@
 }
 
 .button {
-  z-index: 100;
+  z-index: 10;
   width: 100%;
   padding: 14px 0;
   font-weight: 700;
@@ -156,29 +163,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  // position: relative;
+  position: absolute;
   width: 100%;
   height: 220px;
   overflow: hidden;
   top: 0;
   right: 50%;
-  transform: translate(50%, 0);
+  // transform: translate(50%, 0);
+  transform: translate(50%, 250px);
   @media screen and (min-width: $mobile-general) {
     height: 380px;
   }
   @media screen and (min-width: $tablet-general) {
     height: 330px;
     position: absolute;
-    width: 380px;
-    transform: translate(97%, 0);
+    // width: 380px;
+    // transform: translate(97%, 0);
+    transform: translate(50%, 0px);
   }
   @media screen and (min-width: $desktop-up) {
-    top: -50px;
+    // top: -50px;
     height: 720px;
-    width: calc(50% + 50px);
-    transform: translate(0, 0);
-    right: 0;
+    // width: calc(50% + 50px);
+    // transform: translate(0, 0);
+    // right: 0;
   }
+
   &--transparent {
     max-width: unset;
     animation: fadeInLeftBig 1500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -198,27 +209,33 @@
     top: 0px;
     left: 50%;
     transform: translate(-50%, 0);
-    @media screen and (min-width: $tablet-general) {
-      top: 0px;
-      left: 50%;
-    }
-    @media screen and (min-width: $desktop-up) {
-      left: 0;
-    }
+    // @media screen and (min-width: $tablet-general) {
+      // top: 0px;
+      // left: 50%;
+    // }
+    // @media screen and (min-width: $desktop-up) {
+      // left: 0;
+    // }
   }
   &-animation {
     transform: translate(-50%, 5px);
     @media screen and (min-width: $tablet-general) {
-      transform: translate(-50%, 18px);
+      // transform: translate(-50%, 18px);
+      transform: translate(-18px, 18px);
     }
     @media screen and (min-width: $desktop-up) {
-      transform: translate(0, 35px);
+      // transform: translate(0, 35px);
+      transform: translate(-53px, 35px);
     }
   }
   &-absolut {
     transform: translate(-50%, 0);
-    @media screen and (min-width: $desktop-up) {
-      transform: translate(80px, 0);
+
+    @media screen and (min-width: $tablet-general) {
+      transform: translate(18px, 0px);
     }
+    // @media screen and (min-width: $desktop-up) {
+      // transform: translate(80px, 0);
+    // }
   }
 }
