@@ -1,4 +1,3 @@
-
 .reviews-container {
   min-width: 0;
   background: $secondary-title-text-color;
@@ -8,7 +7,7 @@
   position: relative;
   overflow: hidden;
   @media screen and (min-width: $tablet-general) {
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -20,12 +19,12 @@
   margin-bottom: 20px;
   max-width: 1090px;
   @media screen and (min-width: $tablet-general) {
-      padding-top: 40px;
-      margin-bottom: 30px;
+    padding-top: 40px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop-up) {
-      padding-top: 50px;
-      margin-bottom: 51px;
+    padding-top: 50px;
+    margin-bottom: 51px;
   }
 }
 .slider {
@@ -43,19 +42,18 @@
   text-align: center;
   min-width: 200px;
   @media screen and (min-width: $tablet-general) {
-      font-weight: 800;
-      font-size: 26px;
-      line-height: 1.3;
-      text-align: center;
-      letter-spacing: 0.03em;
-      margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop-up) {
-      font-weight: 800;
-      font-size: 46px;
-      top: 107px;
+    font-weight: 800;
+    font-size: 46px;
+    top: 107px;
   }
-
 }
 
 .slick-slide {
@@ -126,22 +124,22 @@
   left: -20px;
   background-image: url('../images/svg/arrow-left.svg');
   @media screen and (min-width: $tablet-general) {
-      left: -37px;
+    left: -37px;
   }
   @media screen and (min-width: $desktop-up) {
-      left: -105px;
+    left: -105px;
   }
 }
 
 .slick-next {
   right: -20px;
   background-image: url('../images/svg/arrow-right.svg');
-@media screen and (min-width: $tablet-general) {
+  @media screen and (min-width: $tablet-general) {
     right: -37px;
-}
-@media screen and (min-width: $desktop-up) {
+  }
+  @media screen and (min-width: $desktop-up) {
     right: -105px;
-}
+  }
 }
 .review-slide__card {
   display: flex;
@@ -192,14 +190,14 @@
   color: $accent-color;
   margin-bottom: 16px;
   @media screen and (min-width: $tablet-general) {
-      font-size: 20px;
-      line-height: 1.2;
-      margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: $desktop-up) {
-      font-size: 30px;
-      line-height: 1.23;
-      // margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.23;
+    // margin-bottom: 10px;
   }
 }
 
@@ -210,23 +208,18 @@
   color: $primary-text-color;
   margin-bottom: 16px;
 
-
-  
-@media screen and (min-width: $tablet-general) {
+  @media screen and (min-width: $tablet-general) {
     text-align: left;
     margin-bottom: 20px;
     max-width: 500px;
+  }
+
+  @media screen and (min-width: $desktop-up) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
-
-
-@media screen and (min-width: $desktop-up) {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.21;
-}
-}
-
-
 
 .review-slide__comment {
   font-weight: 500;
@@ -235,12 +228,12 @@
   margin-bottom: 30px;
   letter-spacing: normal;
   @media screen and (min-width: $tablet-general) {
-      text-align: left;
-      margin-bottom: 0px;
+    text-align: left;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: $desktop-up) {
-      font-size: 18px;
-      line-height: 28px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
@@ -330,9 +323,9 @@
   background-position: center;
   cursor: pointer;
   @media screen and (min-width: $tablet-general) {
-      margin: 0px 15px;
-      max-width: 1400px;
-    }
+    margin: 0px 15px;
+    max-width: 1400px;
+  }
 }
 .slider .slick-current:not(.review-slide__card) {
   box-shadow: 0px 0px 0px 1.5px $accent-color inset;
@@ -343,13 +336,13 @@
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: $tablet-general) {
-      margin-right: 46px;
-      margin-left: 35px;
+    margin-right: 46px;
+    margin-left: 35px;
   }
   @media screen and (min-width: $desktop-up) {
     margin-right: 40px;
     margin-left: 77px;
-}
+  }
 }
 
 .review-slide__second-block {
@@ -359,15 +352,15 @@
   padding: 0px 10px;
   padding-bottom: 30px;
   @media screen and (min-width: $tablet-general) {
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-bottom: 40px;
-      align-items: flex-start;
-      margin-right: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    align-items: flex-start;
+    margin-right: 35px;
   }
   @media screen and (min-width: $desktop-up) {
     margin-right: 107px;
-}
+  }
 }
 
 @media screen and (min-width: 591px) {
