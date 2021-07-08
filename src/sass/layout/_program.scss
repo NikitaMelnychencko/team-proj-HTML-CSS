@@ -1,6 +1,7 @@
 //Program-section
 .program-section {
   background-color: $secondary-background-color;
+  overflow: hidden;
 
   @media screen and (max-width: 767px) {
     padding-top: 50px;
